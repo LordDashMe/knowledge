@@ -174,8 +174,8 @@ Common Used Tags:
 ```
 
 ### References:
-* [ https://en.wikibooks.org/wiki/PHP_Programming/Coding_Standards ]
-* [ https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/ ]
-* [ https://en.wikipedia.org/wiki/PHPDoc ]
-* [ http://manual.phpdoc.org/HTMLSmartyConverter/PHP/phpDocumentor/tutorial_tags.pkg.html ]
-* [ http://docs.phpdoc.org/guides/docblocks.html ]
+* https://en.wikibooks.org/wiki/PHP_Programming/Coding_Standards
+* https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/
+* https://en.wikipedia.org/wiki/PHPDoc
+* http://manual.phpdoc.org/HTMLSmartyConverter/PHP/phpDocumentor/tutorial_tags.pkg.html
+* http://docs.phpdoc.org/guides/docblocks.html

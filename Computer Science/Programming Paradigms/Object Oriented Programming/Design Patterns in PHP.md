@@ -78,21 +78,21 @@ we may found not related to the pattern itself.
 
 ## REFERENCES :link:
 - Primary link:
-    * [ https://code.tutsplus.com/series/design-patterns-in-php--cms-747 ]
+    * https://code.tutsplus.com/series/design-patterns-in-php--cms-747
 - Info ``#2`` link:
-    * [ https://code.tutsplus.com/tutorials/design-patterns-the-facade-pattern--cms-22238 ]
+    * https://code.tutsplus.com/tutorials/design-patterns-the-facade-pattern--cms-22238
 - Info ``#3`` link:
-    * [ https://code.tutsplus.com/tutorials/design-patterns-the-adapter-pattern--cms-22262 ]
+    * https://code.tutsplus.com/tutorials/design-patterns-the-adapter-pattern--cms-22262
 - Info ``#4`` link:
-    * [ https://code.tutsplus.com/tutorials/design-patterns-the-decorator-pattern--cms-22641 ]
+    * https://code.tutsplus.com/tutorials/design-patterns-the-decorator-pattern--cms-22641
 - Info ``#5`` link:
-    * [ https://code.tutsplus.com/tutorials/design-patterns-the-strategy-pattern--cms-22796 ]
+    * https://code.tutsplus.com/tutorials/design-patterns-the-strategy-pattern--cms-22796
 - Info ``#6`` link:
-    * [ https://code.tutsplus.com/tutorials/design-patterns-the-simple-factory-pattern--cms-22345 ]
+    * https://code.tutsplus.com/tutorials/design-patterns-the-simple-factory-pattern--cms-22345
 - Info ``#7`` link:
-    * [ https://code.tutsplus.com/tutorials/design-patterns-the-command-pattern--cms-22942 ]
+    * https://code.tutsplus.com/tutorials/design-patterns-the-command-pattern--cms-22942
 - Info ``#8`` link:
-    * [ https://code.tutsplus.com/tutorials/design-patterns-the-observer-pattern--cms-22975 ]
+    * https://code.tutsplus.com/tutorials/design-patterns-the-observer-pattern--cms-22975
 - Info ``#9`` link:
-    * [ https://code.tutsplus.com/tutorials/design-patterns-the-factory-method-pattern--cms-24530 ]
-    * [ https://sourcemaking.com/design_patterns/factory_method/php/1 ]
+    * https://code.tutsplus.com/tutorials/design-patterns-the-factory-method-pattern--cms-24530
+    * https://sourcemaking.com/design_patterns/factory_method/php/1

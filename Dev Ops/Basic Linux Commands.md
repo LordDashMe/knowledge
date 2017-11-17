@@ -85,10 +85,10 @@
 ```
 
 - Some Referrence to achive this command:
-    * [ http://techstuffrevolution.blogspot.com/2012/10/access-your-smart-bro-canopy-connected.html ]
-    * [ http://manpages.ubuntu.com/manpages/trusty/man8/route.8.html ]
-    * [ https://askubuntu.com/questions/677548/cant-delete-a-route-with-0-0-0-0-gateway ]
-    * [ http://www.configserverfirewall.com/ubuntu-linux/add-permanent-static-route-ubuntu/ ]
+    * http://techstuffrevolution.blogspot.com/2012/10/access-your-smart-bro-canopy-connected.html
+    * http://manpages.ubuntu.com/manpages/trusty/man8/route.8.html
+    * https://askubuntu.com/questions/677548/cant-delete-a-route-with-0-0-0-0-gateway
+    * http://www.configserverfirewall.com/ubuntu-linux/add-permanent-static-route-ubuntu/
 
 #### UTILITIES ####
 - VGA or Graphic Card Status

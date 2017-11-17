@@ -13,22 +13,22 @@
     - Install the NodeJS and NPM.
 3. This is a simplified steps for setting up mongoDB ready:
     - Step 1 Install
-        * [ https://docs.mongodb.com/tutorials/install-mongodb-on-ubuntu/ ]
+        * https://docs.mongodb.com/tutorials/install-mongodb-on-ubuntu/
     - Step 2 Check version
-        * [ https://stackoverflow.com/questions/19405791/what-version-of-mongodb-is-installed-on-ubuntu ]
+        * https://stackoverflow.com/questions/19405791/what-version-of-mongodb-is-installed-on-ubuntu
     - Step 3 Add User admin
-        * [ https://stackoverflow.com/questions/38921414/mongodb-what-are-the-default-user-and-password ]
-        * [ https://docs.mongodb.com/manual/tutorial/enable-authentication/ ]
+        * https://stackoverflow.com/questions/38921414/mongodb-what-are-the-default-user-and-password
+        * https://docs.mongodb.com/manual/tutorial/enable-authentication/
     - Step 4 Change default Port
-        * [ https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell ]
-        * [ https://stackoverflow.com/questions/41933171/how-to-change-default-port-number-in-mongodb ]
+        * https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell
+        * https://stackoverflow.com/questions/41933171/how-to-change-default-port-number-in-mongodb
     - Step 5 Restart and do the Step 1 start mongodb again.
 
 ## REFERENCES :link:
 - Info ``#1`` link:
-    * [ https://medium.com/netscape/everything-about-creating-an-https-server-using-node-js-2fc5c48a8d4e ]
+    * https://medium.com/netscape/everything-about-creating-an-https-server-using-node-js-2fc5c48a8d4e
 - Info ``#2`` link:
-    * [ https://docs.mongodb.com/manual/tutorial/enable-authentication/ ]
+    * https://docs.mongodb.com/manual/tutorial/enable-authentication/
     - To verify what PORT mongoDB currently using
-        * [ https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell ]
-    * [ https://tecadmin.net/install-latest-nodejs-npm-on-ubuntu/# ]
+        * https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell
+    * https://tecadmin.net/install-latest-nodejs-npm-on-ubuntu/#

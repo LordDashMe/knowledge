@@ -6,4 +6,4 @@
 
 ## REFERENCES :link:
 - Download link:
-    * [ https://boostnote.io/#download ]
+    * https://boostnote.io/#download

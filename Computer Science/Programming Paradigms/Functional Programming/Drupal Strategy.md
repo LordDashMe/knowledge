@@ -8,6 +8,6 @@
 
 ## REFERENCES :link:
 - Info ``#1`` links:
-    * [ https://www.youtube.com/watch?v=M3_xnTK6-pA ]
+    * https://www.youtube.com/watch?v=M3_xnTK6-pA
 - Info ``#2`` links:
-    * [ https://www.youtube.com/watch?v=e-5obm1G_FY ]
+    * https://www.youtube.com/watch?v=e-5obm1G_FY

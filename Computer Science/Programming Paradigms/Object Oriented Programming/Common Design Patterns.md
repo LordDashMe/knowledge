@@ -53,22 +53,22 @@
 
 ## REFERENCES :link:
 - Info ``#1`` links:
-    * [ https://www.youtube.com/watch?v=-NCgRD9-C6o&list=PLF206E906175C7E07&index=3 ]
+    * https://www.youtube.com/watch?v=-NCgRD9-C6o&list=PLF206E906175C7E07&index=3
 - Info ``#2`` links:
-    * [ https://www.youtube.com/watch?v=wiQdrH2YpT4&index=4&list=PLF206E906175C7E07 ]
+    * https://www.youtube.com/watch?v=wiQdrH2YpT4&index=4&list=PLF206E906175C7E07
 - Info ``#3`` links:
-    * [ https://www.youtube.com/watch?v=ub0DXaeV6hA&index=5&list=PLF206E906175C7E07 ]
+    * https://www.youtube.com/watch?v=ub0DXaeV6hA&index=5&list=PLF206E906175C7E07
 - Info ``#4`` links:
-    * [ https://www.youtube.com/watch?v=xbjAsdAK4xQ&list=PLF206E906175C7E07&index=6 ]
+    * https://www.youtube.com/watch?v=xbjAsdAK4xQ&list=PLF206E906175C7E07&index=6
 - Info ``#5`` links:
-    * [ https://www.youtube.com/watch?v=NZaXM67fxbs&list=PLF206E906175C7E07&index=7 ]
+    * https://www.youtube.com/watch?v=NZaXM67fxbs&list=PLF206E906175C7E07&index=7
 - Info ``#6`` links:
-    * [ https://www.youtube.com/watch?v=9XnsOpjclUg&index=8&list=PLF206E906175C7E07 ]
+    * https://www.youtube.com/watch?v=9XnsOpjclUg&index=8&list=PLF206E906175C7E07
 - Info ``#7`` links:
-    * [ https://www.youtube.com/watch?v=AFbZhRL0Uz8&index=9&list=PLF206E906175C7E07 ]
+    * https://www.youtube.com/watch?v=AFbZhRL0Uz8&index=9&list=PLF206E906175C7E07
 - Info ``#8`` links:
-    * [ https://www.youtube.com/watch?v=j40kRwSm4VE&list=PLF206E906175C7E07&index=11 ]
+    * https://www.youtube.com/watch?v=j40kRwSm4VE&list=PLF206E906175C7E07&index=11
 - Info ``#9`` links:
-    * [ https://www.youtube.com/watch?v=B1Y8fcYrz5o&index=14&list=PLF206E906175C7E07 ]
+    * https://www.youtube.com/watch?v=B1Y8fcYrz5o&index=14&list=PLF206E906175C7E07
 - Info ``#10`` links:
-    * [ https://www.youtube.com/watch?v=qG286LQM6BU&index=13&list=PLF206E906175C7E07 ]
+    * https://www.youtube.com/watch?v=qG286LQM6BU&index=13&list=PLF206E906175C7E07

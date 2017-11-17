@@ -13,11 +13,11 @@
 
 ## REFERENCES :link:
 - Info ``#1`` links:
-    * [ https://ruslanspivak.com/lsbasi-part1/ ]
+    * https://ruslanspivak.com/lsbasi-part1/
 - Info ``#3`` links:
-    * [ https://github.com/rlerdorf ]
-    * [ https://github.com/phplang/php-past ]
+    * https://github.com/rlerdorf
+    * https://github.com/phplang/php-past
 - Info ``#4`` links:
-    * [ http://www.wikihow.com/Create-a-Programming-Language ]
+    * http://www.wikihow.com/Create-a-Programming-Language
 - Worth to read this reference for info ``#5`` link:
-    * [ http://www.paulgraham.com/icad.html ]
+    * http://www.paulgraham.com/icad.html
