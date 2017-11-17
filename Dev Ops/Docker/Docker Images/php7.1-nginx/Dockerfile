@@ -8,7 +8,7 @@ RUN apt-get install -y software-properties-common
 RUN apt-get install -y python-software-properties
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
-RUN apt-get update -y
+RUN apt-get update --fix-missing -y
 
 # Install nginx, php7.1, etc.
 RUN apt-get install -y nginx php7.1 php7.1-fpm php7.1-mbstring php7.1-curl php7.1-mcrypt php7.1-tokenizer php7.1-dom zip vim nano php7.1-mysql wkhtmltopdf libxrender1 php7.1-imap git cron openssl php-bcmath

@@ -8,7 +8,7 @@ RUN apt-get install -y software-properties-common
 RUN apt-get install -y python-software-properties
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
-RUN apt-get update -y
+RUN apt-get update --fix-missing -y
 
 # Install apache, PHP, and supplimentary programs, openssh-server, curl, and lynx-cur.
 RUN apt-get install -y apache2 php5.6 php5.6-mysql php5.6-mbstring php5.6-mcrypt libapache2-mod-php5.6 curl lynx-cur openssl cron vim php-gd php5.6-gd php5.6-curl php5.6-xml
