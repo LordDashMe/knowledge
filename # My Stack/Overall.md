@@ -70,7 +70,8 @@
 15. NPM
 16. Notepad++ 
 17. Brackets
-18. Markdown (.md)
+18. Markdown
+19. Boostnote
 
 ### Other Skills:
 1. Configuring, managing and maintaining computer networking equipments.
