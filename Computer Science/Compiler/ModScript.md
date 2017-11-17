@@ -1,4 +1,6 @@
-```php
+# ModScript Case Study
+
+```
 
 <?php
 

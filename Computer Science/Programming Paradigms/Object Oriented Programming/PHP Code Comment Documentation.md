@@ -1,7 +1,8 @@
+# PHP Code Comment Documentation
 
-## Goal: "To write effective and comprehensive documentation."
+### Goal: "To write effective and comprehensive documentation."
 
-## Sample of Comment Structure Block:
+### Sample of Comment Structure Block:
 
 ### For Class:
 ```php
@@ -172,10 +173,9 @@ Common Used Tags:
     Ex. @throws Exception\SampleSubException
 ```
 
-------
-
-- https://en.wikibooks.org/wiki/PHP_Programming/Coding_Standards
-- https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/
-- https://en.wikipedia.org/wiki/PHPDoc
-- http://manual.phpdoc.org/HTMLSmartyConverter/PHP/phpDocumentor/tutorial_tags.pkg.html
-- http://docs.phpdoc.org/guides/docblocks.html
+### References:
+* [ https://en.wikibooks.org/wiki/PHP_Programming/Coding_Standards ]
+* [ https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/ ]
+* [ https://en.wikipedia.org/wiki/PHPDoc ]
+* [ http://manual.phpdoc.org/HTMLSmartyConverter/PHP/phpDocumentor/tutorial_tags.pkg.html ]
+* [ http://docs.phpdoc.org/guides/docblocks.html ]

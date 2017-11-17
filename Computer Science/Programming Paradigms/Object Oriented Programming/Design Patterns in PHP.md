@@ -1,5 +1,6 @@
- 
-## INFO :bulb: ##
+# Design Patterns in PHP Case Study 
+
+## INFO :bulb:
 1. Note: The author of this blog tried his best to explain the above pattern that will fit to PHP programming... 
 we may found not related to the pattern itself.
 2. Facade Pattern (Structural).
@@ -75,23 +76,23 @@ we may found not related to the pattern itself.
         - method of the factory will get the args as string
         - This is a good way on creating different class but we need to know IoC :-)
 
-## REFERENCES :link: ##
-- For Primary Reference:
-    - [ https://code.tutsplus.com/series/design-patterns-in-php--cms-747 ]
-- For ``#2`` Reference:
-    - [ https://code.tutsplus.com/tutorials/design-patterns-the-facade-pattern--cms-22238 ]
-- For ``#3`` Reference:
-    - [ https://code.tutsplus.com/tutorials/design-patterns-the-adapter-pattern--cms-22262 ]
-- For ``#4`` Reference:
-    - [ https://code.tutsplus.com/tutorials/design-patterns-the-decorator-pattern--cms-22641 ]
-- For ``#5`` Reference:
-    - [ https://code.tutsplus.com/tutorials/design-patterns-the-strategy-pattern--cms-22796 ]
-- For ``#6`` Reference:
-    - [ https://code.tutsplus.com/tutorials/design-patterns-the-simple-factory-pattern--cms-22345 ]
-- For ``#7`` Reference:
-    - [ https://code.tutsplus.com/tutorials/design-patterns-the-command-pattern--cms-22942 ]
-- For ``#8`` Reference:
-    - [ https://code.tutsplus.com/tutorials/design-patterns-the-observer-pattern--cms-22975 ]
-- For ``#9`` Reference:
-    - [ https://code.tutsplus.com/tutorials/design-patterns-the-factory-method-pattern--cms-24530 ]
-    - [ https://sourcemaking.com/design_patterns/factory_method/php/1 ]
+## REFERENCES :link:
+- Primary link:
+    * [ https://code.tutsplus.com/series/design-patterns-in-php--cms-747 ]
+- Info ``#2`` link:
+    * [ https://code.tutsplus.com/tutorials/design-patterns-the-facade-pattern--cms-22238 ]
+- Info ``#3`` link:
+    * [ https://code.tutsplus.com/tutorials/design-patterns-the-adapter-pattern--cms-22262 ]
+- Info ``#4`` link:
+    * [ https://code.tutsplus.com/tutorials/design-patterns-the-decorator-pattern--cms-22641 ]
+- Info ``#5`` link:
+    * [ https://code.tutsplus.com/tutorials/design-patterns-the-strategy-pattern--cms-22796 ]
+- Info ``#6`` link:
+    * [ https://code.tutsplus.com/tutorials/design-patterns-the-simple-factory-pattern--cms-22345 ]
+- Info ``#7`` link:
+    * [ https://code.tutsplus.com/tutorials/design-patterns-the-command-pattern--cms-22942 ]
+- Info ``#8`` link:
+    * [ https://code.tutsplus.com/tutorials/design-patterns-the-observer-pattern--cms-22975 ]
+- Info ``#9`` link:
+    * [ https://code.tutsplus.com/tutorials/design-patterns-the-factory-method-pattern--cms-24530 ]
+    * [ https://sourcemaking.com/design_patterns/factory_method/php/1 ]

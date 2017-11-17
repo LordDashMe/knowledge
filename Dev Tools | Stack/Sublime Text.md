@@ -1,7 +1,6 @@
+# Sublime Text 3 Stack
 
-### Sublime Text 3 ###
-
-## INFO :bulb: ##
+## INFO :bulb:
 1. phpfmt
 2. SublimeLinter
 3. SublimeLinter-php
@@ -9,8 +8,10 @@
 5. GitGutter
 6. A File Icon
 7. Markdown Preview
-8. Some steps and configurations.
-    - phpfmt - default properties for PSR-2 Coding Style
+8. Some steps and configurations:
+
+- phpfmt - default properties for PSR-2 Coding Style
+
 ```
     {
         "autocomplete": false,
@@ -37,9 +38,11 @@
         "version": 1
     }
 ``` 
-    - Ctrl + Shift + P - To show the Package Installer and other package in the current sublime. 
-    - Use F11 to format the current PHP File.
-    - Serial Key for Build 3143.
+
+- Ctrl + Shift + P - To show the Package Installer and other package in the current sublime. 
+- Use F11 to format the current PHP File.
+- Serial Key for Build 3143.
+
 ```
     —– BEGIN LICENSE —–
     TwitterInc
@@ -57,5 +60,5 @@
 ```
 
 
-## REFERENCES :link: ##
+## REFERENCES :link:
 - N/A

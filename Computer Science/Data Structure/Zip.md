@@ -1,4 +1,6 @@
-Zip is a simple yet powerful PHP Micro Framework.
+# Zip Micro Framework
+
+### Zip is a simple yet powerful PHP Micro Framework.
 
 ```
 Legend:
@@ -55,13 +57,13 @@ zip (Convention)
                         * SessionManager.php
 ```
 
-TO DO:
-1. Routes
-2. Views
-3. Request and Response
-4. Life Cycle
-5. Validation
-6. Session
-7. Assets Loading (Private and Public)
-8. Middlware
-9. Controller
+### TO DO:
+- [ ] 1. Routes
+- [ ] 2. Views
+- [ ] 3. Request and Response
+- [ ] 4. Life Cycle
+- [ ] 5. Validation
+- [ ] 6. Session
+- [ ] 7. Assets Loading (Private and Public)
+- [ ] 8. Middlware
+- [ ] 9. Controller

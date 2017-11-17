@@ -1,4 +1,3 @@
-
 # Overall
 
 ### Programming Paradigms:
@@ -8,47 +7,47 @@
 
 ### Web App Development:
 1. PHP
-    * Laravel
-    * Wordpress
-    * Drupal
-    * CodeIgniter
-    * PHPUnit Testing
-    * API Libraries
-    * Custom Framework
-    * Custom Compiler
+    - Laravel
+    - Wordpress
+    - Drupal
+    - CodeIgniter
+    - PHPUnit Testing
+    - API Libraries
+    - Custom Framework
+    - Custom Compiler
 2. JavaScript
-    * JQuery
-    * AngularJS
-    * NodeJS
+    - JQuery
+    - AngularJS
+    - NodeJS
 3. SQL
-    * MySQL
-    * MsSQL
-    * SQLite
+    - MySQL
+    - MsSQL
+    - SQLite
 4. HTML
 5. CSS
-    * Bootstrap
+    - Bootstrap
 6. API Integration
-    * Facebook
-    * Twitter
+    - Facebook
+    - Twitter
 
 ### Mobile App Development:
 1. Ionic
-    * Hybrid Mobile App Framework
+    - Hybrid Mobile App Framework
 2. Android
-    * Java
+    - Java
 
 ### Desktop App Development:
 1. Java Se
-    * Swing
+    - Swing
 
 ### Development and Operations:
 1. Docker
-    * Dockerfile
-    * Docker Networking
+    - Dockerfile
+    - Docker Networking
 2. Web Servers
-    * Apache
-    * Nginx
-    * SSL
+    - Apache
+    - Nginx
+    - SSL
 3. Linux Server
 4. Windows Server
 
