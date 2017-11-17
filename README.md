@@ -1,8 +1,10 @@
-# Learning Depot
+# Knowledge
+
+## :bulb: :books: Everything that you need.
 
 ```
     {
-        "learning-depot": {
+        "knowledge": {
             "# My Stack",
             "Computer Science",
             "Data Structure",
