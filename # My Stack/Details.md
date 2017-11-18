@@ -24,6 +24,7 @@
     - MsSQL
     - SQLite
 4. HTML
+    - Markdown
 5. CSS
     - Bootstrap
 6. API Integration
@@ -44,12 +45,13 @@
 1. Docker
     - Dockerfile
     - Docker Networking
-2. Web Servers
+2. Travis CI
+3. Web Servers
     - Apache
     - Nginx
     - SSL
-3. Linux Server
-4. Windows Server
+4. Linux Server
+5. Windows Server
 
 ### Technologies:
 1. Git
@@ -65,12 +67,11 @@
 11. XAMPP
 12. Slack
 13. Composer
-14. Packigist
+14. Packagist
 15. NPM
 16. Notepad++ 
 17. Brackets
-18. Markdown
-19. Boostnote
+18. Boostnote
 
 ### Other Skills:
 1. Configuring, managing and maintaining computer networking equipments.
