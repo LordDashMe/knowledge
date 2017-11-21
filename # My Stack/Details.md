@@ -53,6 +53,23 @@
 4. Linux Server
 5. Windows Server
 
+### Computer Networking:
+1. Network Nodes Setup
+    - Repeaters
+    - Bridges
+    - Switches
+2. Network Performance
+    - Quality of Service (QoS)
+    - Network Congestion Control
+3. Network Security
+    - MAC | IP Filter
+4. Port Forwarding
+    - Local
+5. Network Load Balancing
+6. Connectify
+    - Hotspot
+    - Load Balancing
+
 ### Technologies:
 1. Git
 2. Github
@@ -74,8 +91,7 @@
 18. Boostnote
 
 ### Other Skills:
-1. Configuring, managing and maintaining computer networking equipments.
-2. Computer assembling and maintenance.
-3. Troubleshooting hardware and software problems.
-4. Installing and configuring the peripherals, components and drivers.
-5. Installing software and application to user standards.
+1. Computer assembling and maintenance.
+2. Troubleshooting hardware and software problems.
+3. Installing and configuring the peripherals, components and drivers.
+4. Installing software and application to user standards.
