@@ -115,3 +115,6 @@
 
 - To show the hard drive usage.
 ```df```
+
+- To show all the services available
+```service --status-all```
