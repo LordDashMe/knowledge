@@ -36,3 +36,9 @@
 
 #### Docker Remove All Containers
 ```docker rm $(docker ps -a -q)```
+
+#### Docker Events
+```docker events&```
+
+#### Docker Logs
+```docker logs```
