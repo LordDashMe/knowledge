@@ -3,13 +3,12 @@
 #### :bulb: :books: :telescope: Everything that you need.
 
 ```
-    {
-        "Computer Science",
-        "Dev News",
-        "Dev Ops",
-        "Dev Tools | Stack"
-    }
-
+{
+    "Computer Science",
+    "Dev News",
+    "Dev Ops",
+    "Dev Tools | Stack"
+}
 ```
 
 #### Suggestion?
