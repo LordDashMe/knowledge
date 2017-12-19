@@ -89,6 +89,7 @@
 16. Notepad++ 
 17. Brackets
 18. Boostnote
+19. Trello
 
 ### Other Skills:
 1. Computer assembling and maintenance.

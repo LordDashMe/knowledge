@@ -23,6 +23,8 @@
         * https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell
         * https://stackoverflow.com/questions/41933171/how-to-change-default-port-number-in-mongodb
     - Step 5 Restart and do the Step 1 start mongodb again.
+4. To install this in Ubuntu 17.04 tested.
+    - http://linuxbsdos.com/2017/06/25/how-to-install-node-js-and-npm-lts-on-ubuntu-17-04-linux-mint-18-2/
 
 ## REFERENCES :link:
 - Info ``#1`` link:
