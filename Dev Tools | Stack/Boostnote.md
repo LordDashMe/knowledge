@@ -1,4 +1,4 @@
-# Boostnote Stack
+# Boostnote
 
 ## INFO :bulb:
 1. Note-taking for developer. 

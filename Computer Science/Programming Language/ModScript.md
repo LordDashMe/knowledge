@@ -1,9 +1,9 @@
 # ModScript Case Study
 
-```
+Created a simple scripting language built on top of PHP scripting language.
 
+```php
 <?php
-
 
 /*
 PrintScreen('TEST11111');
@@ -20,18 +20,15 @@ PrintScreen('TEST11111');
     );
 */
 
-
 $syntax = "
-
-<@ModScript
-    
-    PrintScreen('LOOB');
-    PrintScreen('\n');
-    
-    IncludeModScript('/home/cg/root/TestModeScript.mdscx');
-    
-@>
-
+    <@ModScript
+        
+        PrintScreen('LOOB');
+        PrintScreen('\n');
+        
+        IncludeModScript('/home/cg/root/TestModeScript.mdscx');
+        
+    @>
 ";
 
 $comp = new Compiler();

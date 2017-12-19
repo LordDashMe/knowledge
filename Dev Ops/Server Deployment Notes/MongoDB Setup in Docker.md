@@ -1,4 +1,4 @@
-# Mongo DB Setup in Docker
+# MongoDB Setup in Docker
 
 ### LINK MONGODB TO CONTAINER:
 

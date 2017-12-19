@@ -1,4 +1,4 @@
-# Basic Linux Commands
+# Linux Basic Commands
 
 #### FOLDER AND FILE PERMISSION SETUP  
 - Change mode all with group write.

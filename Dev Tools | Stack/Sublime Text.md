@@ -1,6 +1,8 @@
-# Sublime Text 3 Stack
+# Sublime Text
 
-## INFO :bulb:
+### Sublime Text 3 Build 3143
+
+#### INFO :bulb:
 1. phpfmt
 2. SublimeLinter
 3. SublimeLinter-php
@@ -60,5 +62,5 @@
 ```
 
 
-## REFERENCES :link:
+#### REFERENCES :link:
 - N/A
