@@ -62,10 +62,10 @@
 
 - The Firewall for ubuntu, this may help for preventing unwanted access to the server, atleast a first layer of protection.
 ```
-    ufw enable
-    ufw disable
-    ufw allow {port}
-    ufw reset
+ufw enable
+ufw disable
+ufw allow {port}
+ufw reset
 ```
 
 - To show the bridges in ubuntu. (This will need to install bridge-utils)
@@ -78,10 +78,10 @@
 
 - Route Table Management. (This will show the current list of route(s) in the table) ```route ```
 ```
-    route add -net x.x.x.x (The IPADDR of route that will be adding) netmask 255.x.x.x gw (The current gateway of the local machine) 192.x.x.x
+route add -net x.x.x.x (The IPADDR of route that will be adding) netmask 255.x.x.x gw (The current gateway of the local machine) 192.x.x.x
 ```
 ```
-    route del -net x.x.x.x/24 (The destination IPADDR, the 24 will be depend on the size of the IPADDR by default 24 can be use)
+route del -net x.x.x.x/24 (The destination IPADDR, the 24 will be depend on the size of the IPADDR by default 24 can be use)
 ```
 
 - Some Referrence to achive this command:

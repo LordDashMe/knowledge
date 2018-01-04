@@ -24,11 +24,10 @@
 ```  
 
 ```
-    Ex:
-    
-        docker run --name={project-nestea-beach-2017} --net={docker-bridge-local} --ip={192.168.116.100} -it -v {/var/www/site/drupal/nestea-beach-2017/:/var/www/site/} --link={mysql-server:db} {php5/apache:latest} bash
+Sample actual usage:
 
-        docker run --name={project-creamsilk-2017} --net={docker-bridge-local} --ip={192.168.116.101} -it -v {/var/www/site/wordpress/creamsilk-2017/:/var/www/site/} --link={mysql-server:db} {php5/apache:latest} bash
+docker run --name={project-nestea-beach-2017} --net={docker-bridge-local} --ip={192.168.116.100} -it -v {/var/www/site/drupal/nestea-beach-2017/:/var/www/site/} --link={mysql-server:db} {php5/apache:latest} bash
+docker run --name={project-creamsilk-2017} --net={docker-bridge-local} --ip={192.168.116.101} -it -v {/var/www/site/wordpress/creamsilk-2017/:/var/www/site/} --link={mysql-server:db} {php5/apache:latest} bash
 ```    
 
 #### BASH IN THE CONTAINER

@@ -7,3 +7,5 @@
 ## REFERENCES :link:
 - Download link:
     * https://boostnote.io/#download
+
+Reminder: Always update Boostnote! for better experience regarding to UI and Features

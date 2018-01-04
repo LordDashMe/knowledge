@@ -5,9 +5,9 @@
 ```
 {
     "Computer Science",
-    "Dev News",
-    "Dev Ops",
-    "Dev Tools | Stack"
+    "DevOps",
+    "Developer Tools | Stack",
+    "News"
 }
 ```
 
