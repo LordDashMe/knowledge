@@ -1,6 +1,6 @@
 # Setup Test Automation with PHPunit and Coveralls
 
-- To setup jenkins for PHP automation testing yung phpunit follow the simplified steps below:
+- To setup jenkins for PHP automation testing using phpunit follow the simplified steps below:
     1. Create a "Folder" in Jenkins and name it related to your project name.
     2. After creation of folder above you need to CD to that folder.
     3. Inside the project folder you create you need to create a "Freestyle Project"
