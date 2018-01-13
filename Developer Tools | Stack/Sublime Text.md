@@ -61,4 +61,5 @@ E36B85CC 84991F19 7575D828 470A92AB
 
 
 #### REFERENCES :link:
-- N/A
+- Download
+    - https://www.sublimetext.com/docs/3/linux_repositories.html
