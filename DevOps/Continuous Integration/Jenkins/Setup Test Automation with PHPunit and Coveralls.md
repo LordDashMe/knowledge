@@ -27,6 +27,10 @@
                 ~/bin/composer install
                 ~/bin/composer require php-coveralls/php-coveralls
                 vendor/bin/phpunit
+                export CI_NAME=$JOB_NAME
+                export CI_BUILD_NUMBER=$BUILD_NUMBER
+                export CI_BUILD_URL=$BUILD_URL
+                export CI_BRANCH="master"
                 export COVERALLS_RUN_LOCALLY=1
                 vendor/bin/php-coveralls -v
                 ```
