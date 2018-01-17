@@ -5,7 +5,7 @@
     2. After creation of folder above you need to CD to that folder.
     3. Inside the project folder you create you need to create a "Freestyle Project"
        this free style project will name related to the branch of you repository ex. master.
-    4. After creating freestyle project the configuration will show.
+    4. After creating freestyle project the configuration will show. 
         - Configuration:
             - Source Code Management:
                 - Type: GIT
