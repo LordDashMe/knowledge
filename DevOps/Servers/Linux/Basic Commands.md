@@ -84,7 +84,32 @@ route add -net x.x.x.x (The IPADDR of route that will be adding) netmask 255.x.x
 route del -net x.x.x.x/24 (The destination IPADDR, the 24 will be depend on the size of the IPADDR by default 24 can be use)
 ```
 
-- Some Referrence to achive this command:
+- To set static DNS.
+    - Reference: https://askubuntu.com/questions/346838/how-do-i-configure-my-dns-settings-in-ubuntu-server
+```
+$ vim /etc/network/interfaces
+
+
+# The loopback network interface  
+auto lo  
+iface lo inet loopback  
+
+
+# The primary network interface  
+auto eth0 
+iface eth0 inet static  
+address 192.168.X.X
+netmask 255.255.255.0
+gateway 192.168.X.X
+dns-nameservers X.X.X.X
+
+:wq (Save the changes)
+
+
+$ /etc/init.d/networking restart (Refresh all the configuration)
+```
+
+- Some Reference to achive this command:
     * http://techstuffrevolution.blogspot.com/2012/10/access-your-smart-bro-canopy-connected.html
     * http://manpages.ubuntu.com/manpages/trusty/man8/route.8.html
     * https://askubuntu.com/questions/677548/cant-delete-a-route-with-0-0-0-0-gateway

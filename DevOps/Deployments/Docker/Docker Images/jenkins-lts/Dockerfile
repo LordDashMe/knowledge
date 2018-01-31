@@ -18,7 +18,7 @@ RUN apt update
 # Install PHP and Extensions.
 RUN apt-get update
 RUN apt-get install -y php7.1 php7.1-fpm php7.1-mbstring php7.1-curl php7.1-mcrypt php7.1-tokenizer php7.1-dom php7.1-zip php7.1-mysql php7.1-imap  php7.1-dev php7.1-xml php7.1-cli
-RUN apt-get install -y zip vim nano wkhtmltopdf libxrender1 git cron openssl
+RUN apt-get install -y zip vim nano wkhtmltopdf libxrender1 git cron openssl php-xdebug
 
 # Configure PHP Setup.
 RUN sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.1/fpm/php-fpm.conf

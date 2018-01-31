@@ -1,4 +1,4 @@
-# GnuPG Setup and Common Commands
+# GnuPG
 
 - To install GnuPGv2.
     - Download files here: https://www.gnupg.org/download/index.html
@@ -111,6 +111,18 @@ $ gpg -e -u "Sender User Name" -r "Receiver User Name" somefile
 (Note: Important that the recipient generated key must imported first before decrypting the selected file to other device.)
 $ gpg --decrypt --output <DecryptedFilename.extension> <FilenaeToDecrypt.extension>
 $ gpg -d mydata.tar.gpg
+```
+
+- To export gpg public key.
+```
+gpg --export "Real Name" > file.gpg.pub.key
+gpg --output file.gpg.pub.key --export "email"
+```
+
+- To export gpg secret key.
+```
+gpg --export-secret-key "Real Name" > file.gpg.secret.key
+gpg --output file.gpg.secret.key --export-secret-key "email"
 ```
 
 - To import gpg public key.
