@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
 MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
+RUN echo "This Dockerfile will work for Laravel structure."
 
 RUN apt-get update -y
 
@@ -10,8 +11,9 @@ RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
 RUN apt-get update --fix-missing -y
 
-# Install apache, PHP, and supplimentary programs, openssh-server, curl, and lynx-cur
-RUN apt-get install -y apache2 php7.1 php7.1-mysql php7.1-mbstring php7.1-mcrypt libapache2-mod-php7.1 curl lynx-cur openssl cron vim php-gd php7.1-gd php7.1-curl php7.1-xml
+# Install Apache2, PHP 7.1, and Other Supplimentary Programs (cron, git, vim, etc.)
+RUN apt-get install -y apache2 php7.1 php7.1-fpm php7.1-mbstring php7.1-curl php7.1-mcrypt php7.1-tokenizer php7.1-dom php7.1-zip php7.1-mysql php7.1-imap php7.1-xml php7.1-cli php7.1-gd
+RUN apt-get install -y zip vim nano wkhtmltopdf libxrender1 git cron openssl lynx-cur php-xdebug php-gd libapache2-mod-php7.1
 
 # Enable apache mods
 RUN a2enmod php7.1
@@ -35,7 +37,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 EXPOSE 80
 
 # Update the default apache site with the following we created.
-ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
+ADD apache-config-laravel.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Change permission in this folder.
 RUN chown -R www-data:www-data /var/www \ 

@@ -102,27 +102,25 @@ $ gpg --list-secret-keys (This will show the list of created key gen)
 
 - To encrypt file in gpg.
 ```
-$ gpg --encrypt --output <EncryptedFilename.gpg> --recipient <your.email@mail.com> <FilenameToEncrypt.extension>
-$ gpg -e -u "Sender User Name" -r "Receiver User Name" somefile
+$ gpg --encrypt --output <TheEncryptedContentFilename.gpg> --recipient <TheListedEmail@email.com> <TheFilenameToEncrypt.extension>
 ```
 
 - To decrypt gpg file.
 ```
 (Note: Important that the recipient generated key must imported first before decrypting the selected file to other device.)
-$ gpg --decrypt --output <DecryptedFilename.extension> <FilenaeToDecrypt.extension>
-$ gpg -d mydata.tar.gpg
+$ gpg --decrypt --output <DecryptedFilename.extension> <TheEncryptedContentFilename.gpg>
 ```
 
 - To export gpg public key.
 ```
-gpg --export "Real Name" > file.gpg.pub.key
-gpg --output file.gpg.pub.key --export "email"
+$ gpg --export "Real Name" > file.gpg.pub.key
+$ gpg --output file.gpg.pub.key --export "The Email"
 ```
 
 - To export gpg secret key.
 ```
-gpg --export-secret-key "Real Name" > file.gpg.secret.key
-gpg --output file.gpg.secret.key --export-secret-key "email"
+$ gpg --export-secret-key "Real Name" > file.gpg.secret.key
+$ gpg --output file.gpg.secret.key --export-secret-key "The Email"
 ```
 
 - To import gpg public key.
@@ -132,7 +130,7 @@ $ gpg --import file.gpg.pub.key
 
 - To import gpg secret key.
 ```
-gpg --import file.gpg.secret.key
+$ gpg --import file.gpg.secret.key
 ```
 
 - Reference: 
