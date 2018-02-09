@@ -88,4 +88,5 @@
     - https://www.digitalocean.com/community/questions/trying-to-setup-a-sftp-user-with-limited-access
     - Solving the chroot required permission for the given directory : https://www.digitalocean.com/community/questions/chrootdirectory-access-and-privilege-problem
     - Solution for broken pipe error for Chroot when the given directory not owned by root : https://superuser.com/questions/394298/sftp-chroot-result-in-broken-pipe
+    - Custom directory pointing for Chroot : https://www.tecmint.com/restrict-ssh-user-to-directory-using-chrooted-jail/
 
