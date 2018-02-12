@@ -1,5 +1,7 @@
 # Linux Users, Groups, Permissions and Directory Jail
 
+----
+
 ### Manage User Linux
 - To add user.
     ```
@@ -33,7 +35,7 @@
     - The purpose of each permission : https://unix.stackexchange.com/questions/21251/execute-vs-read-bit-how-do-directory-permissions-in-linux-work
     - Deleting group to the user : https://unix.stackexchange.com/questions/29570/how-do-i-remove-a-user-from-a-group
 
----
+----
 
 ### Chroot Jail (Limiting Directory Access to the User)
 
@@ -50,9 +52,9 @@
     ```
     #Subsystem sftp /usr/libexec/openssh/sftp-server
     ```
-3. and set UsePAM from ```yes``` to ```no```
+3. and set UsePAM ```yes```
     ```
-    UsePAM no
+    UsePAM yes
     ```
 4. Open sshd config file again and add the snippet code below:
     ```
@@ -66,9 +68,9 @@
        ForceCommand internal-sftp
        X11Forwarding no
        AllowTCPForwarding no
-       PasswordAuthentication yes
+       # PasswordAuthentication yes
     ```
-5. Restart ssh
+5. Restart ```ssh``` service.
     ```
     $ sudo service ssh restart
     ```
