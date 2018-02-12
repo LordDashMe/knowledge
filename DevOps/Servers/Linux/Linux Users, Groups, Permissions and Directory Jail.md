@@ -80,10 +80,10 @@
     ```
     $ sudo useradd -g sftpusers -d "custom directory" -s (/sbin/nologin | /usr/sbin/nologin) "username"
     ```
-    - The purpose of ```-g``` is to add group to that user.
-    - The purpose of ```-d``` is to set the default or home directory of that user.
+    - The purpose of ```-g``` is to add group to the user.
+    - The purpose of ```-d``` is to set the default or home directory of the user.
     - Takenote ```/sbin/nologin``` in other cases will not be available so check the ```/usr/sbin/nologin``` instead. 
-    - The purpose of ```-s``` setting to ```/sbin/nologin | /usr/sbin/nologin``` is to disable the ssh access to that user.
+    - The purpose of ```-s``` is to disable the ssh access to that user by setting the ```/sbin/nologin | /usr/sbin/nologin```.
 - Reference:
     - Straight forward example how to limit access in a specific directory for user : https://www.vultr.com/docs/setup-sftp-only-user-accounts-on-ubuntu-14
     - https://www.digitalocean.com/community/questions/how-do-i-restrict-a-user-to-a-specific-directory
