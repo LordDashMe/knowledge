@@ -47,6 +47,12 @@
 - To decompress a file using tar.
 ```tar -xzvf /path/to/source/archive.tar.gz -C /tmp```
 
+- To check the directory or file size.
+```du -sh directory/ ```
+
+- To check the free space in the disk
+```df -h . ```
+
 #### NETWORK CONFIGURATION ####
 - To view the nmap NAT for host/ip. (This will need to install nmap)
 ```nmap {host/ip}```
