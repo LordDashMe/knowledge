@@ -1,6 +1,8 @@
 # ModScript Case Study
 
-Created a simple scripting language built on top of PHP scripting language.
+Created a simple scripting language built on top of PHP scripting language. 
+
+The purpose of this is to try the logical scenario of every programming language for including files.
 
 ```php
 <?php

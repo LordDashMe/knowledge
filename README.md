@@ -6,7 +6,7 @@
 {
     "Computer Science",
     "DevOps",
-    "Developer Tools | Stack",
+    "Developer Tools",
     "News"
 }
 ```
