@@ -1,4 +1,4 @@
-# MongoDB and PHP Setup in Docker
+# PHP and MongoDB in Docker
 
 ### LINK MONGODB TO CONTAINER:
 

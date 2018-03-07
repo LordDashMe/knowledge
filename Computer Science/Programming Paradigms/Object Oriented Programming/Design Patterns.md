@@ -1,16 +1,16 @@
-# Common Design Patterns
+# Design Patterns
 
-* This are the list of common OOP design patterns:
-    - Strategy
-    - Observer
-    - Factory Method
-    - Abstract Factory
-    - Singleton
-    - Builder
-    - Prototype
-    - Decorator
-    - Facade
-    - Adapter
+* This are the list of commonly used OOP design patterns:
+    - [Strategy](#strategy)
+    - [Observer](#observer)
+    - [Factory Method](#factory-method)
+    - [Abstract Factory](#abstract-factory)
+    - [Singleton](#singleton)
+    - [Builder](#builder)
+    - [Prototype](#prototype)
+    - [Decorator](#decorator)
+    - [Facade](#facade)
+    - [Adapter](#adapter)
 
 #### Strategy
 * Seperate all the action into different classes instead of defining in the specific subclasses.

@@ -1,13 +1,15 @@
-# Setup for PHP Projects
+# CodeClimate PHP
 
 * Steps to setup codeclimate
     - https://docs.codeclimate.com/v1.0/docs/test-coverage-php
     - https://docs.codeclimate.com/docs/finding-your-test-coverage-token
 * Primary Feature of codeclimate is the complexity evaluation or analysis concepts see below link:
     - https://docs.codeclimate.com/v1.0/docs/cognitive-complexity
+
 ---
-* Just add this lines of code in the travis CI yml.
- ```yml
+
+* Add this lines of code in the Travis CI yml.
+```yml
 # Required to run your project under the correct environment.
 language: php
 
@@ -36,5 +38,5 @@ notifications:
   on_success: never
   on_failure: always
 ```
-* Everything is just same as how coveralls setup.
-* ```Note:``` This is soon to be deprecated we will try the latest copy as soon as possible.
+
+* Note: this configuration will be soon to be deprecated, we will try the latest copy as soon as possible.

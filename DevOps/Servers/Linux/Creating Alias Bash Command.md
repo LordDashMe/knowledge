@@ -1,4 +1,4 @@
-# Creating Custom Command
+# Creating Alias Bash Command
 
 #### Open user .bashrc
 ```

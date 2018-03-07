@@ -1,5 +1,19 @@
 # Sublime Text
 
+#### Refresh :wrench:
+
+* To enable the refresh project using a keyboard key for example using ```F5``` follow the steps below:
+    - Preferences > Key Bindings - User
+    - Add the code below:
+        ```
+        { 
+            "keys"    : ["f5"], 
+            "command" : "refresh_folder_list" 
+        }
+        ``` 
+
+---
+
 #### Configuration for Sublime Text 3 Build 3143
 
 ##### PHP :bulb:
