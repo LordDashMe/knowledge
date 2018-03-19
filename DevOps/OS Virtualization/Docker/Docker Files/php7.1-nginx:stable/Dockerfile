@@ -1,7 +1,6 @@
 FROM ubuntu:latest
 
 MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
-RUN echo "This Dockerfile will work for Laravel structure."
 
 RUN apt-get update -y
 
@@ -24,7 +23,7 @@ RUN echo "\npost_max_size = 100M" >> /etc/php/7.1/fpm/php.ini
 
 # Nginx config.
 RUN rm /etc/nginx/sites-enabled/default
-ADD site-nginx-laravel.conf /etc/nginx/sites-available/
+ADD site-nginx.conf /etc/nginx/sites-available/
 RUN ln -s /etc/nginx/sites-available/site-nginx.conf /etc/nginx/sites-enabled/site
 
 # Change permission in this folder.
@@ -39,6 +38,3 @@ EXPOSE 80
 CMD cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2
 CMD mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
 CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini
-
-# Define default command.
-ENTRYPOINT service nginx start && service php7.1-fpm start && /bin/bash

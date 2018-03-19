@@ -1,7 +1,6 @@
 FROM ubuntu:latest
 
 MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
-RUN echo "This Dockerfile will work for Laravel structure."
 
 RUN apt-get update -y
 
@@ -24,7 +23,7 @@ RUN a2enmod headers
 RUN sed -i "s/short_open_tag = Off/short_open_tag= On/" /etc/php/7.1/apache2/php.ini
 RUN sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/7.1/apache2/php.ini
 
-# Manually set up the apache environment variables
+# Manually set up the apache environment variables.
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
@@ -37,7 +36,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 EXPOSE 80
 
 # Update the default apache site with the following we created.
-ADD apache-config-laravel.conf /etc/apache2/sites-enabled/000-default.conf
+ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Change permission in this folder.
 RUN chown -R www-data:www-data /var/www \ 
@@ -48,9 +47,3 @@ RUN chown -R www-data:www-data /var/www \
 CMD cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2
 CMD mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
 CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini
-
-# By default start up apache in the foreground, override with /bin/bash for interactive.
-CMD /usr/sbin/apachectl -D FOREGROUND
-
-# Define default command.
-ENTRYPOINT service apache2 start && /bin/bash

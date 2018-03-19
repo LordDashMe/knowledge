@@ -10,18 +10,18 @@ RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
 RUN apt-get update --fix-missing -y
 
-# Install Apache2, PHP 7.1, and Other Supplimentary Programs (cron, git, vim, etc.)
-RUN apt-get install -y apache2 php7.1 php7.1-fpm php7.1-mbstring php7.1-curl php7.1-mcrypt php7.1-tokenizer php7.1-dom php7.1-zip php7.1-mysql php7.1-imap php7.1-xml php7.1-cli php7.1-gd
-RUN apt-get install -y zip vim nano wkhtmltopdf libxrender1 git cron openssl lynx-cur php-xdebug php-gd libapache2-mod-php7.1
+# Install Apache2, PHP 5.6, and Other Supplimentary Programs (cron, git, vim, etc.)
+RUN apt-get install -y apache2 php5.6 php5.6-fpm php5.6-mbstring php5.6-curl php5.6-mcrypt php5.6-tokenizer php5.6-dom php5.6-zip php5.6-mysql php5.6-imap php5.6-xml php5.6-cli php5.6-gd
+RUN apt-get install -y zip vim nano wkhtmltopdf libxrender1 git cron openssl lynx-cur php-xdebug php-gd libapache2-mod-php5.6
 
-# Enable apache mods
-RUN a2enmod php7.1
+# Enable apache mods.
+RUN a2enmod php5.6
 RUN a2enmod rewrite
 RUN a2enmod headers
 
 # Update the php.ini file, enable <? ?> tags and quieten logging.
-RUN sed -i "s/short_open_tag = Off/short_open_tag= On/" /etc/php/7.1/apache2/php.ini
-RUN sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/7.1/apache2/php.ini
+RUN sed -i "s/short_open_tag = Off/short_open_tag= On/" /etc/php/5.6/apache2/php.ini
+RUN sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/5.6/apache2/php.ini
 
 # Manually set up the apache environment variables.
 ENV APACHE_RUN_USER www-data
@@ -44,12 +44,6 @@ RUN chown -R www-data:www-data /var/www \
     && find /var/www -type f -exec chmod 644 {} \;
 
 # Replace the php environment to development mode.
-CMD cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2
-CMD mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
-CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini
-
-# By default start up apache in the foreground, override with /bin/bash for interactive.
-CMD /usr/sbin/apachectl -D FOREGROUND
-
-# Define default command.
-ENTRYPOINT service apache2 start && /bin/bash
+CMD cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/apache2
+CMD mv /etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini.bak
+CMD mv /etc/php/5.6/apache2/php.ini-development /etc/php/5.6/apache2/php.ini
