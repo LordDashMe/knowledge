@@ -36,6 +36,6 @@ RUN chown -R www-data:www-data /var/www \
 EXPOSE 80
 
 # Replace the php environment to development mode.
-CMD cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/apache2
-CMD mv /etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini.bak
-CMD mv /etc/php/5.6/apache2/php.ini-development /etc/php/5.6/apache2/php.ini
+CMD cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/nginx
+CMD mv /etc/php/5.6/nginx/php.ini /etc/php/5.6/nginx/php.ini.bak
+CMD mv /etc/php/5.6/nginx/php.ini-development /etc/php/5.6/nginx/php.ini
