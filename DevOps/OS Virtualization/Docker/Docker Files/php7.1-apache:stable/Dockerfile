@@ -11,8 +11,35 @@ RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 RUN apt-get update --fix-missing -y
 
 # Install Apache2, PHP 7.1, and Other Supplimentary Programs (cron, git, vim, etc.)
-RUN apt-get install -y apache2 php7.1 php7.1-fpm php7.1-mbstring php7.1-curl php7.1-mcrypt php7.1-tokenizer php7.1-dom php7.1-zip php7.1-mysql php7.1-imap php7.1-xml php7.1-cli php7.1-gd
-RUN apt-get install -y zip vim nano wkhtmltopdf libxrender1 git cron openssl lynx-cur php-xdebug php-gd libapache2-mod-php7.1
+RUN apt-get install -y \
+    apache2 \
+    php7.1 \
+    php7.1-fpm \
+    php7.1-mbstring \
+    php7.1-curl \
+    php7.1-mcrypt \
+    php7.1-tokenizer \
+    php7.1-dom \
+    php7.1-zip \
+    php7.1-mysql \
+    php7.1-imap \
+    php7.1-xml \
+    php7.1-cli \
+    php7.1-gd
+
+RUN apt-get install -y \
+    zip \
+    vim \
+    nano \
+    wkhtmltopdf \
+    libxrender1 \
+    git \
+    cron \
+    openssl \
+    lynx-cur \
+    php-xdebug \
+    php-gd \
+    libapache2-mod-php7.1
 
 # Enable apache mods
 RUN a2enmod php7.1
@@ -44,6 +71,8 @@ RUN chown -R www-data:www-data /var/www \
     && find /var/www -type f -exec chmod 644 {} \;
 
 # Replace the php environment to development mode.
-CMD cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2
-CMD mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
-CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini
+RUN cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2
+RUN mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
+RUN mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini
+
+ENTRYPOINT ["/bin/bash"]
