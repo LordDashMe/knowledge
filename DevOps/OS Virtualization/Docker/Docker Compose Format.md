@@ -14,7 +14,7 @@ services:
     external_links:
       - {your existing containers}
     networks:
-      docker-bridge-local:
+      {your custom bridge name}:
         ipv4_address: {your ip v4}
     ports:
       - {your custom port}
