@@ -197,3 +197,8 @@
     ```
     service --status-all
     ```
+
+- To change the server or local machine timezone.
+    ```
+    dpkg-reconfigure tzdata
+    ```
