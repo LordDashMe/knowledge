@@ -1,5 +1,29 @@
 # Sublime Text
 
+#### Custom Side Bar
+
+- To add custom size of the sidebar apply the below code in the Default Theme used.
+    ```text
+    {
+        "class": "icon_folder",
+        // "layer0.texture": "Theme - Default/common/light/folder_closed.png",
+        "layer0.opacity": 0.3,
+        "content_margin": [8, 7]
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        // "layer0.texture": "Theme - Default/common/light/folder_open.png",
+        "layer0.opacity": 0.3,
+        "content_margin": [8, 7]
+    },
+    {
+        "class": "sidebar_label",
+        "font.size": 12,
+    },
+
+    ```
+
 #### Refresh :wrench:
 
 * To enable the refresh project using a keyboard key for example using ```F5``` follow the steps below:
