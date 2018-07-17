@@ -41,6 +41,11 @@ RUN apt-get update --fix-missing -y && apt-get install -y \
     php5.6-cli \
     php5.6-gd
 
+# Install required wordpress app to run WP CLI testing tool.
+RUN apt-get update --fix-missing -y && apt-get install -y \
+    subversion \
+    mysql-client
+
 # Enable apache mods.
 RUN a2enmod php5.6
 RUN a2enmod rewrite

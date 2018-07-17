@@ -1,18 +1,33 @@
 FROM ubuntu:latest
 
 MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
-RUN echo "This Dockerfile will work for Laravel Folder Structure."
+
+RUN echo "This Dockerfile will work for Laravel folder structure only!"
 
 RUN apt-get update -y
-
 RUN apt-get install -y software-properties-common
 RUN apt-get install -y python-software-properties
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
-RUN apt-get update --fix-missing -y
+# Supplimentary Programs (cron, git, vim, etc.)
+RUN apt-get update --fix-missing -y && apt-get install -y \
+    wget \
+    curl \
+    zip \
+    vim \
+    nano \
+    wkhtmltopdf \
+    libxrender1 \
+    git \
+    cron \
+    openssl \
+    lynx-cur \
+    php-xdebug \
+    php-gd \
+    libapache2-mod-php5.6
 
-# Install Apache2, PHP 5.6, and Other Supplimentary Programs (cron, git, vim, etc.)
-RUN apt-get install -y \ 
+# Install Apache2, PHP 5.6 and Extensions related.
+RUN apt-get update --fix-missing -y && apt-get install -y \ 
     apache2 \
     php5.6 \
     php5.6-fpm \
@@ -27,20 +42,6 @@ RUN apt-get install -y \
     php5.6-xml \
     php5.6-cli \
     php5.6-gd
-
-RUN apt-get install -y \
-    zip \
-    vim \
-    nano \
-    wkhtmltopdf \
-    libxrender1 \
-    git \
-    cron \
-    openssl \
-    lynx-cur \
-    php-xdebug \
-    php-gd \
-    libapache2-mod-php5.6
 
 # Enable apache mods.
 RUN a2enmod php5.6

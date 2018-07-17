@@ -3,15 +3,29 @@ FROM ubuntu:latest
 MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
 
 RUN apt-get update -y
-
 RUN apt-get install -y software-properties-common
 RUN apt-get install -y python-software-properties
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
-RUN apt-get update --fix-missing -y
+# Supplimentary Programs (cron, git, vim, etc.)
+RUN apt-get update --fix-missing -y && apt-get install -y \
+    wget \
+    curl \
+    zip \
+    vim \
+    nano \
+    wkhtmltopdf \
+    libxrender1 \
+    git \
+    cron \
+    openssl \
+    lynx-cur \
+    php-xdebug \
+    php-gd \
+    libapache2-mod-php7.1
 
-# Install Apache2, PHP 7.1, and Other Supplimentary Programs (cron, git, vim, etc.)
-RUN apt-get install -y \
+# Install Apache2, PHP 7.1 and Extensions related.
+RUN apt-get update --fix-missing -y && apt-get install -y \ 
     apache2 \
     php7.1 \
     php7.1-fpm \
@@ -26,20 +40,6 @@ RUN apt-get install -y \
     php7.1-xml \
     php7.1-cli \
     php7.1-gd
-
-RUN apt-get install -y \
-    zip \
-    vim \
-    nano \
-    wkhtmltopdf \
-    libxrender1 \
-    git \
-    cron \
-    openssl \
-    lynx-cur \
-    php-xdebug \
-    php-gd \
-    libapache2-mod-php7.1
 
 # Enable apache mods
 RUN a2enmod php7.1
