@@ -1,21 +1,37 @@
 # PHP OOP Case Study
 
-* Some concepts.
-    - Class
-    - Inheritance
-    - Encapsulation
-    - Instance and Local Variables
-    - "is A versus Has A"? when to use inheritance.
-        - Is a: for superclass
-        - Has a: for fields (specific)
-    - https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1
+Primary concepts.
 
-* Polymorphism.
-    - http://phpenthusiast.com/object-oriented-php-tutorials/polymorphism-in-php
-    - https://stackoverflow.com/questions/8542661/general-polymorphism-with-php-examples
-* Abstract Classes.
-    - Abstract methods.
-* Interfaces.
-    - https://www.youtube.com/watch?v=yRJ1rRoMnIM&list=PLF206E906175C7E07&index=2
-* SourceMaking. 
-    - https://sourcemaking.com/design_patterns
+    1.  Class
+
+    2.  Inheritance
+
+    3.  Encapsulation
+
+    4.  Instance and Local Variables
+
+    5.  "is A versus Has A"? when to use inheritance.
+
+        - Is a: for superclass
+
+        - Has a: for fields (specific)
+
+    * https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1
+
+Polymorphism
+
+    http://phpenthusiast.com/object-oriented-php-tutorials/polymorphism-in-php
+
+    https://stackoverflow.com/questions/8542661/general-polymorphism-with-php-examples
+
+Abstract Classes
+
+    Abstract methods.
+
+Interfaces
+
+    https://www.youtube.com/watch?v=yRJ1rRoMnIM&list=PLF206E906175C7E07&index=2
+
+SourceMaking
+
+    https://sourcemaking.com/design_patterns

@@ -1,6 +1,7 @@
 # Be Secured
 
-#### The Hacker News
+## The Hacker News
 
-* Security in a serious way.
-    - Check this link: https://thehackernews.com/
+Security in a serious way.
+
+    Check this link: https://thehackernews.com/

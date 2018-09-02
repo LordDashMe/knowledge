@@ -1,8 +1,8 @@
 # Pipelines PHP and Coveralls
 
-* Bitbucket pipelines example for PHP with phpunit and xdebug configuration.
+Bitbucket pipelines example for PHP with phpunit and xdebug configuration.
 
-* Add this yml file in your repo usually the name is ```bitbucket-pipelines.yml```.
+Add this yml file in your repo usually the name is ```bitbucket-pipelines.yml```.
 
 ```yml
 # This is a sample build configuration for PHP.
@@ -31,4 +31,4 @@ pipelines:
           - vendor/bin/php-coveralls -v
 ```
 
-* https://gist.github.com/gaw508/cb9eb10b596ea3783143d1d76159f72c
+https://gist.github.com/gaw508/cb9eb10b596ea3783143d1d76159f72c

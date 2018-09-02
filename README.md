@@ -1,8 +1,8 @@
 # Knowledge
 
-#### :bulb: :books: :telescope: Everything that you need.
+## :bulb: :books: :telescope: Everything that you need
 
-```
+```json
 {
     "Computer Science",
     "DevOps",
@@ -11,4 +11,4 @@
 }
 ```
 
-#### Hello! thank you so much for visiting this repo! :+1:
+## Hello! thank you so much :+1: for visiting this repository

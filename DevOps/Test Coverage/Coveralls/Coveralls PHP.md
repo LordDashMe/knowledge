@@ -1,13 +1,17 @@
 # Coveralls PHP
 
-* Steps to setup coveralls.
-    - http://kizu514.com/blog/setting-up-coveralls-io-with-travis-ci-and-phpunit/
-    - https://stackoverflow.com/questions/34980017/travis-ci-works-correctly-but-coveralls-doesnt-see-the-builds/35019765
+Steps to setup coveralls.
+  
+  http://kizu514.com/blog/setting-up-coveralls-io-with-travis-ci-and-phpunit/
+  
+  https://stackoverflow.com/questions/34980017/travis-ci-works-correctly-but-coveralls-doesnt-see-the-builds/35019765
 
 ---
 
-* If the coverage_clover XML file is not readable.
-- https://github.com/php-coveralls/php-coveralls/issues/185
+If the coverage_clover XML file is not readable.
+  
+  https://github.com/php-coveralls/php-coveralls/issues/185
+
 ```xml
 <filter>
     <whitelist processUncoveredFilesFromWhitelist="true">
@@ -18,9 +22,9 @@
 
 ---
 
-* Files needed to run this and need to apply in the package root dir.
+Files needed to run this and need to apply in the package root dir.
 
-- ```.coveralls.yml```
+".coveralls.yml"
 
 ```yml
 coverage_clover: build/logs/clover.xml
@@ -28,7 +32,7 @@ json_path: build/logs/coveralls-upload.json
 exclude_no_stmt: true
 ```
 
-- ```.travis.yml```
+".travis.yml"
 
 ```yml
 # Required to run your project under the correct environment.
@@ -59,7 +63,7 @@ notifications:
   on_failure: always
 ```
 
-- ```phpunit.xml.dist``` - Optional: you can add this to newer version of PHPUnit to avoid adding option in the phpunit cli command.
+"phpunit.xml.dist" (Optional: you can add this to newer version of PHPUnit to avoid adding option in the phpunit cli command.)
 
 ```xml
 <logging>

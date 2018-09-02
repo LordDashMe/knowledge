@@ -1,32 +1,46 @@
 # Test Automation PHP and Coveralls
 
-##### To setup Jenkins:
+## Setup Jenkins
 
-* Create a "Folder" in Jenkins and name it related to your project name.
+Create a "Folder" in Jenkins and name it related to your project name.
 
-* After creation of folder above you need to CD to that folder.
+After creation of folder above you need to CD to that folder.
 
-* Inside the project folder you create you need to create a "Freestyle Project" this free style project will name related to the branch of you repository ex. master.
+Inside the project folder you create you need to create a "Freestyle Project" this free style project will name related to the branch of you repository ex. master.
 
-* After creating freestyle project the configuration will show. 
-    - Configuration:
+After creating freestyle project the configuration will show. 
+
+    Configuration:
+
         - Source Code Management:
+
             - Type: GIT
+
             - Repositories.
+
                 - URL.
+
                 - Credentials.
+
             - Branches to build.
+
         - Build Triggers:
+
             - Check the "Build when a change is pushed to Bitbucket".
+
         - Build:
-            ```
+
+            ```text
             ~/bin/composer install
             vendor/bin/phpunit
             ```
-* For the case you use Coveralls to show the code coverage after phpunit execute.
-    - Configuration:
+For the case you use Coveralls to show the code coverage after phpunit execute.
+
+    Configuration:
+
         - Build:
-            ```
+
+            ```text
             ~/bin/composer install
             ~/bin/composer require php-coveralls/php-coveralls
             vendor/bin/phpunit
@@ -38,9 +52,10 @@
             vendor/bin/php-coveralls -v
             ```
 
-##### Files that are required to the project setup:
+## Setup files that are required to the project
 
-* ```.coveralls.yml```
+".coveralls.yml"
+
 ```yml
 coverage_clover: build/logs/clover.xml
 repo_token: gjdQNf3QGFGVNpff6qjzuOs67AFEl96FF (You can get this in your coveralls repo setting)
@@ -48,7 +63,7 @@ json_path: build/logs/coveralls-upload.json
 exclude_no_stmt: true
 ```
 
-* ```phpunit.xml.dist or phpunit.xml```
+"phpunit.xml.dist or phpunit.xml"
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,17 +100,17 @@ exclude_no_stmt: true
             <directory suffix=".php">./src</directory>
         </whitelist>
     </filter>
-    
+
     <testsuites>
         <testsuite name="Hasher">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
-    
+
 </phpunit>
 ```
 
-* ```composer.json```
+"composer.json"
 
 ```json
 {
@@ -125,6 +140,6 @@ exclude_no_stmt: true
 }
 ```
 
-* That's all my config to run coveralls and phpunit using jenkins.
+That's all my config to run coveralls and phpunit using jenkins.
 
-* Reference: https://alexbilbie.com/2015/04/setting-up-jenkins/
+Reference: https://alexbilbie.com/2015/04/setting-up-jenkins/

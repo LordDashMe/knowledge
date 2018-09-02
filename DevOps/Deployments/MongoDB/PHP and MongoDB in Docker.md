@@ -1,19 +1,22 @@
 # PHP and MongoDB in Docker
 
-### LINK MONGODB TO CONTAINER:
+## LINK MONGODB TO CONTAINER:
 
-#### STEP 1:
-```
+### STEP 1
+
+```text
 docker run --name=mongo-server --net=docker-bridge-local --ip=192.168.116.4 -v /var/lib/docker-mongo-3.4.10/:/var/lib/mongo -p 58808:27017 -d mongo:3.4.10
 ```
 
-#### STEP 2:
-```
+### STEP 2
+
+```text
 docker exec -it mongo-server mongo --port 27017
 ```
 
-#### STEP 3:
-```
+### STEP 3
+
+```text
 db.createUser(
   {
     user: "admin",
@@ -23,18 +26,21 @@ db.createUser(
 )
 ```
 
-#### STEP 4:
-```
+### STEP 4
+
+```text
 docker exec -it mongo-server mongod --auth --port 27017
 ```
 
-#### STEP 5:
-```
+### STEP 5
+
+```text
 docker exec -it mongo-server mongo --port 27017 -u "admin" -p "password" --authenticationDatabase "admin"
 ```
 
-#### STEP 6:
-```
+### STEP 6
+
+```text
 db.createUser(
   {
     user: "admin",
@@ -44,10 +50,12 @@ db.createUser(
 )
 ```
 
-#### STEP 7:
-```
+### STEP 7
+
+```text
 docker run --name=project-test-mongo --net=docker-bridge-local --ip=192.168.116.108 -it -v /var/www/site/others/test-mongo/:/var/www/site/ -p 8810:80 --link=mongo-server php5.6/apache-mongo:stable bash
 ```
 
-### HOW TO USE MONGO DB IN PHP 5.6:
-* https://www.tutorialspoint.com/mongodb/mongodb_php.htm
+## HOW TO USE MONGO DB IN PHP 5.6
+
+  https://www.tutorialspoint.com/mongodb/mongodb_php.htm

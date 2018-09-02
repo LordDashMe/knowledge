@@ -1,14 +1,19 @@
 # CodeClimate PHP
 
-* Steps to setup codeclimate
-    - https://docs.codeclimate.com/v1.0/docs/test-coverage-php
-    - https://docs.codeclimate.com/docs/finding-your-test-coverage-token
-* Primary Feature of codeclimate is the complexity evaluation or analysis concepts see below link:
-    - https://docs.codeclimate.com/v1.0/docs/cognitive-complexity
+Steps to setup codeclimate
+  
+  https://docs.codeclimate.com/v1.0/docs/test-coverage-php
+  
+  https://docs.codeclimate.com/docs/finding-your-test-coverage-token
+
+Primary Feature of codeclimate is the complexity evaluation or analysis concepts see below link:
+  
+  https://docs.codeclimate.com/v1.0/docs/cognitive-complexity
 
 ---
 
-* Add this lines of code in the Travis CI yml.
+Add this lines of code in the Travis CI yml.
+
 ```yml
 # Required to run your project under the correct environment.
 language: php
@@ -39,4 +44,4 @@ notifications:
   on_failure: always
 ```
 
-* Note: this configuration will be soon to be deprecated, we will try the latest copy as soon as possible.
+Note: this configuration will be soon to be deprecated, we will try the latest copy as soon as possible.
