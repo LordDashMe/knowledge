@@ -2,7 +2,7 @@
 
 ## :bulb: :books: :telescope: Everything that you need
 
-```json
+```text
 {
     "Computer Science",
     "DevOps",
