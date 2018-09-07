@@ -1,6 +1,6 @@
 # Knowledge
 
-## :bulb: :books: :telescope: Everything that you need
+:bulb: :books: :telescope: Everything that you need
 
 ```text
 {
@@ -11,4 +11,4 @@
 }
 ```
 
-Hello! thank you so much for visiting this repository. :+1:
+Hello! thank you so much for visiting this repository :+1:
