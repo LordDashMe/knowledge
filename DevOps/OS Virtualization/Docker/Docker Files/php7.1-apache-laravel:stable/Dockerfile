@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
+LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 
 RUN echo "This Dockerfile will work for Laravel folder structure only!"
 

@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
+LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 
 RUN apt-get update -y
 RUN apt-get install -y software-properties-common

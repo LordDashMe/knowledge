@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts
 
 USER root
 
-MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
+LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 
 # Install Utilities
 RUN apt-get update -y --fix-missing
