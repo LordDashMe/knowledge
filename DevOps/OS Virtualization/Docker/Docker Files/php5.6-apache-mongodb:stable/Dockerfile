@@ -78,4 +78,10 @@ RUN cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/apache2
 RUN mv /etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini.bak
 RUN mv /etc/php/5.6/apache2/php.ini-development /etc/php/5.6/apache2/php.ini
 
+# Install PHP Composer
+ADD composer-install.sh /var/www/composer-install.sh
+RUN chmod +x /var/www/composer-install.sh
+RUN /var/www/composer-install.sh
+RUN rm /var/www/composer-install.sh
+
 ENTRYPOINT ["/bin/bash"]

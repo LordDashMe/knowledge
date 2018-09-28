@@ -43,12 +43,6 @@ RUN apt-get update --fix-missing -y && apt-get install -y \
     php5.6-cli \
     php5.6-gd
 
-# Install PHP Composer
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-RUN php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-RUN php -r "unlink('composer-setup.php');"
-
 RUN echo "\ndaemon off;" >> /etc/nginx/site-nginx.conf
 RUN sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/5.6/fpm/php-fpm.conf
 
@@ -73,5 +67,11 @@ EXPOSE 80
 RUN cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/nginx
 RUN mv /etc/php/5.6/nginx/php.ini /etc/php/5.6/nginx/php.ini.bak
 RUN mv /etc/php/5.6/nginx/php.ini-development /etc/php/5.6/nginx/php.ini
+
+# Install PHP Composer
+ADD composer-install.sh /var/www/composer-install.sh
+RUN chmod +x /var/www/composer-install.sh
+RUN /var/www/composer-install.sh
+RUN rm /var/www/composer-install.sh
 
 ENTRYPOINT ["/bin/bash"]
