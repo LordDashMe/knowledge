@@ -1,14 +1,15 @@
 FROM ubuntu:latest
 
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
+LABEL version="1.0.0"
+LABEL description="Optimized Dockerfile for php7.1-nginx."
 
-RUN apt-get update -y
-RUN apt-get install -y software-properties-common
-RUN apt-get install -y python-software-properties
-RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
-
-# Supplimentary Programs (cron, git, vim, etc.)
-RUN apt-get update --fix-missing -y && apt-get install -y \
+RUN apt-get update -y && \
+    apt-get install -y --no-install-recommends software-properties-common && \
+    apt-get install -y --no-install-recommends python-software-properties && \
+    LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
+    apt-get update -y && \
+    apt-get install -y --no-install-recommends \
     wget \
     curl \
     zip \
@@ -19,13 +20,11 @@ RUN apt-get update --fix-missing -y && apt-get install -y \
     git \
     cron \
     openssl \
+    apt-utils \
     lynx-cur \
     php-xdebug \
     php-gd \
-    libapache2-mod-php7.1
-
-# Install Apache2, PHP 7.1 and Extensions related.
-RUN apt-get update --fix-missing -y && apt-get install -y \ 
+    libapache2-mod-php7.1 \
     apache2 \
     php7.1 \
     php7.1-fpm \
@@ -41,35 +40,25 @@ RUN apt-get update --fix-missing -y && apt-get install -y \
     php7.1-cli \
     php7.1-gd
 
-RUN echo "\ndaemon off;" >> /etc/nginx/site-nginx.conf
-RUN sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.1/fpm/php-fpm.conf
+COPY site-nginx.conf composer-install.sh /tmp/
+RUN mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
+    mv /tmp/composer-install.sh /var/www/composer-install.sh && \
+    ln -s /etc/nginx/sites-available/site-nginx.conf /etc/nginx/sites-enabled/site && \
+    chown -R www-data:www-data /var/www && \ 
+    find /var/www -type d -exec chmod 755 {} \; && \
+    find /var/www -type f -exec chmod 644 {} \; && \
+    cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/nginx && \
+    mv /etc/php/7.1/nginx/php.ini /etc/php/7.1/nginx/php.ini.bak && \
+    mv /etc/php/7.1/nginx/php.ini-development /etc/php/7.1/nginx/php.ini && \
+    echo "\ndaemon off;" >> /etc/nginx/site-nginx.conf && \
+    sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.1/fpm/php-fpm.conf && \
+    echo "\ncgi.fix_pathinfo=0" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nupload_max_filesize = 100M" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\npost_max_size = 100M" >> /etc/php/7.1/fpm/php.ini && \
+    chmod +x /var/www/composer-install.sh && \
+    sh /var/www/composer-install.sh && \
+    rm /var/www/composer-install.sh
 
-RUN echo "\ncgi.fix_pathinfo=0" >> /etc/php/7.1/fpm/php.ini
-RUN echo "\nupload_max_filesize = 100M" >> /etc/php/7.1/fpm/php.ini
-RUN echo "\npost_max_size = 100M" >> /etc/php/7.1/fpm/php.ini
-
-# Nginx config.
-RUN rm /etc/nginx/sites-enabled/default
-ADD site-nginx.conf /etc/nginx/sites-available/
-RUN ln -s /etc/nginx/sites-available/site-nginx.conf /etc/nginx/sites-enabled/site
-
-# Change permission in this folder.
-RUN chown -R www-data:www-data /var/www \ 
-    && find /var/www -type d -exec chmod 755 {} \; \
-    && find /var/www -type f -exec chmod 644 {} \;
-
-# Expose ports.
 EXPOSE 80
-
-# Replace the php environment to development mode.
-RUN cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/nginx
-RUN mv /etc/php/7.1/nginx/php.ini /etc/php/7.1/nginx/php.ini.bak
-RUN mv /etc/php/7.1/nginx/php.ini-development /etc/php/7.1/nginx/php.ini
-
-# Install PHP Composer
-ADD composer-install.sh /var/www/composer-install.sh
-RUN chmod +x /var/www/composer-install.sh
-RUN /var/www/composer-install.sh
-RUN rm /var/www/composer-install.sh
 
 ENTRYPOINT ["/bin/bash"]

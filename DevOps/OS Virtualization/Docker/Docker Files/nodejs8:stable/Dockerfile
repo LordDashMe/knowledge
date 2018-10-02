@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 LABEL version="1.0.0"
-LABEL description="Optimized Dockerfile for ubuntu-dev."
+LABEL description="Optimized Dockerfile for nodejs8."
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends software-properties-common && \
@@ -21,7 +21,10 @@ RUN apt-get update -y && \
     cron \
     openssl \
     apt-utils \
-    lynx-cur
+    lynx-cur && \
+    curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh && bash nodesource_setup.sh && \
+    apt-get update -y && \
+    apt-get install -y nodejs build-essential
 
 EXPOSE 80
 

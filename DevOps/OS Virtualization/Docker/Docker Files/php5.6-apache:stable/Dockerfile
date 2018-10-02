@@ -1,12 +1,15 @@
 FROM ubuntu:latest
 
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
+LABEL version="1.0.0"
+LABEL description="Optimized Dockerfile for php5.6-apache."
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends software-properties-common && \
     apt-get install -y --no-install-recommends python-software-properties && \
     LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
-    apt-get install -y --no-install-recommends && \
+    apt-get update -y && \
+    apt-get install -y --no-install-recommends \
     wget \
     curl \
     zip \
@@ -17,6 +20,7 @@ RUN apt-get update -y && \
     git \
     cron \
     openssl \
+    apt-utils \
     lynx-cur \
     php-xdebug \
     php-gd \
@@ -36,11 +40,12 @@ RUN apt-get update -y && \
     php5.6-cli \
     php5.6-gd
 
-# Manage Apache
-ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
-RUN a2enmod php5.6 && \
+COPY apache-config.conf composer-install.sh /tmp/
+RUN mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
+    mv /tmp/composer-install.sh /var/www/composer-install.sh && \
+    a2enmod php5.6 && \
     a2enmod rewrite && \
-    a2enmode headers && \
+    a2enmod headers && \
     cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/apache2 && \
     mv /etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini.bak && \
     mv /etc/php/5.6/apache2/php.ini-development /etc/php/5.6/apache2/php.ini && \
@@ -49,11 +54,8 @@ RUN a2enmod php5.6 && \
     echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
     chown -R www-data:www-data /var/www && \ 
     find /var/www -type d -exec chmod 755 {} \; && \
-    find /var/www -type f -exec chmod 644 {} \;
-
-# Install PHP Composer
-ADD composer-install.sh /var/www/composer-install.sh
-RUN chmod +x /var/www/composer-install.sh && \
+    find /var/www -type f -exec chmod 644 {} \; && \
+    chmod +x /var/www/composer-install.sh && \
     sh /var/www/composer-install.sh && \
     rm /var/www/composer-install.sh
 
@@ -65,4 +67,4 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 
 EXPOSE 80
 
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["/bin/bash"]

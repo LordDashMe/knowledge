@@ -1,8 +1,10 @@
-FROM ubuntu:latest
+FROM jenkins/jenkins:lts
+
+USER root
 
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 LABEL version="1.0.0"
-LABEL description="Optimized Dockerfile for php7.1-apache."
+LABEL description="Optimized Dockerfile for jenkins-php7.1."
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends software-properties-common && \
@@ -40,31 +42,20 @@ RUN apt-get update -y && \
     php7.1-cli \
     php7.1-gd
 
-COPY apache-config.conf composer-install.sh /tmp/
-RUN mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
-    mv /tmp/composer-install.sh /var/www/composer-install.sh && \
-    a2enmod php7.1 && \
-    a2enmod rewrite && \
-    a2enmod headers && \
-    cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2 && \
-    mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak && \
-    mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini && \
-    sed -i "s/short_open_tag = Off/short_open_tag= On/" /etc/php/7.1/apache2/php.ini && \
-    sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/7.1/apache2/php.ini && \
-    echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
+COPY composer-install.sh /tmp/
+RUN mv /tmp/composer-install.sh /var/www/composer-install.sh && \
+    sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.1/fpm/php-fpm.conf && \
+    echo "\ncgi.fix_pathinfo=0" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nupload_max_filesize = 100M" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\npost_max_size = 100M" >> /etc/php/7.1/fpm/php.ini && \
     chown -R www-data:www-data /var/www && \ 
     find /var/www -type d -exec chmod 755 {} \; && \
     find /var/www -type f -exec chmod 644 {} \; && \
     chmod +x /var/www/composer-install.sh && \
     sh /var/www/composer-install.sh && \
-    rm /var/www/composer-install.sh
+    rm /var/www/composer-install.sh && \
+    service php7.1-fpm start
 
-ENV APACHE_RUN_USER www-data
-ENV APACHE_RUN_GROUP www-data
-ENV APACHE_LOG_DIR /var/log/apache2
-ENV APACHE_LOCK_DIR /var/lock/apache2
-ENV APACHE_PID_FILE /var/run/apache2.pid
-
-EXPOSE 80
+USER jenkins
 
 ENTRYPOINT ["/bin/bash"]
