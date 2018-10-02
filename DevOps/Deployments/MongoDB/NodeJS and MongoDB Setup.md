@@ -30,26 +30,26 @@
 
   - Install
 
-    https://docs.mongodb.com/tutorials/install-mongodb-on-ubuntu/
+    - <https://docs.mongodb.com/tutorials/install-mongodb-on-ubuntu/>
 
   - Check version
 
-    https://stackoverflow.com/questions/19405791/what-version-of-mongodb-is-installed-on-ubuntu
+    - <https://stackoverflow.com/questions/19405791/what-version-of-mongodb-is-installed-on-ubuntu>
 
   - Add User admin
 
-    https://stackoverflow.com/questions/38921414/mongodb-what-are-the-default-user-and-password
+    - <https://stackoverflow.com/questions/38921414/mongodb-what-are-the-default-user-and-password>
 
-    https://docs.mongodb.com/manual/tutorial/enable-authentication/
+    - <https://docs.mongodb.com/manual/tutorial/enable-authentication/>
 
   - Change default Port
 
-    https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell
+    - <https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell>
 
-    https://stackoverflow.com/questions/41933171/how-to-change-default-port-number-in-mongodb
+    - <https://stackoverflow.com/questions/41933171/how-to-change-default-port-number-in-mongodb>
 
   - Restart and do the Step 1 start mongodb again.
 
-To install this in Ubuntu 17.04 tested.
+- To install this in Ubuntu 17.04 tested.
 
-    http://linuxbsdos.com/2017/06/25/how-to-install-node-js-and-npm-lts-on-ubuntu-17-04-linux-mint-18-2/
+  - <http://linuxbsdos.com/2017/06/25/how-to-install-node-js-and-npm-lts-on-ubuntu-17-04-linux-mint-18-2/>
