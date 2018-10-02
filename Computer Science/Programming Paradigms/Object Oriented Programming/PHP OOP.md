@@ -16,13 +16,13 @@
 
     - Has a: for fields (specific)
 
-  - https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1
+  - <https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1>
 
 - Polymorphism
 
-  - http://phpenthusiast.com/object-oriented-php-tutorials/polymorphism-in-php
+  - <http://phpenthusiast.com/object-oriented-php-tutorials/polymorphism-in-php>
 
-  - https://stackoverflow.com/questions/8542661/general-polymorphism-with-php-examples
+  - <https://stackoverflow.com/questions/8542661/general-polymorphism-with-php-examples>
 
 - Abstract Classes
 
@@ -30,8 +30,8 @@
 
 - Interfaces
 
-  - https://www.youtube.com/watch?v=yRJ1rRoMnIM&list=PLF206E906175C7E07&index=2
+  - <https://www.youtube.com/watch?v=yRJ1rRoMnIM&list=PLF206E906175C7E07&index=2>
 
 - SourceMaking
 
-  - https://sourcemaking.com/design_patterns
+  - <https://sourcemaking.com/design_patterns>
