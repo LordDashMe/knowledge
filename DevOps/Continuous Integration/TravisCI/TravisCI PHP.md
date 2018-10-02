@@ -1,16 +1,16 @@
 # TravisCI PHP
 
-Core Concepts.
-  
-  Travis CI can be use for multi support unit testing for PHP because it's creating vitual environment.
+- Core Concepts.
 
-Handson.
-  
-  Tried the Travis CI for building but not on actual deployment.
-  
-  It's easy to learn, easy to integrate with Github repo.
+  - Travis CI can be use for multi support unit testing for PHP because it's creating vitual environment.
 
-Learn the default config file of Travis for PHP, add this config file to your root project.
+- Handson.
+  
+  - Tried the Travis CI for building but not on actual deployment.
+  
+  - It's easy to learn, easy to integrate with Github repo.
+
+- Learn the default config file of Travis for PHP, add this config file to your root project.
 
 ```yml
   # Required to run your project under the correct environment.
@@ -28,7 +28,7 @@ Learn the default config file of Travis for PHP, add this config file to your ro
     - composer install
 
   # Commands you want to run that will verify your build.
-  script: 
+  script:
     - mkdir -p build/logs
     - vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 

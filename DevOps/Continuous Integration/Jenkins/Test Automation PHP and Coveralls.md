@@ -2,38 +2,38 @@
 
 ## Setup Jenkins
 
-Create a "Folder" in Jenkins and name it related to your project name.
+- Create a "Folder" in Jenkins and name it related to your project name.
 
-After creation of folder above you need to CD to that folder.
+- After creation of folder above you need to CD to that folder.
 
-Inside the project folder you create you need to create a "Freestyle Project" this free style project will name related to the branch of you repository ex. master.
+- Inside the project folder you create you need to create a "Freestyle Project" this free style project will name related to the branch of you repository ex. master.
 
-After creating freestyle project the configuration will show. 
+- After creating freestyle project the configuration will show.
 
-    Configuration:
+- Configuration:
 
-        - Source Code Management:
+  - Source Code Management:
 
-            - Type: GIT
+    - Type: GIT
 
-            - Repositories.
+    - Repositories:
 
-                - URL.
+      - URL.
 
-                - Credentials.
+      - Credentials.
 
-            - Branches to build.
+    - Branches to build.
 
-        - Build Triggers:
+    - Build Triggers:
 
-            - Check the "Build when a change is pushed to Bitbucket".
+      - Check the "Build when a change is pushed to Bitbucket".
 
-        - Build:
+- Build:
 
-            ```text
-            ~/bin/composer install
-            vendor/bin/phpunit
-            ```
+    ```text
+    ~/bin/composer install
+    vendor/bin/phpunit
+    ```
 For the case you use Coveralls to show the code coverage after phpunit execute.
 
     Configuration:
@@ -54,7 +54,7 @@ For the case you use Coveralls to show the code coverage after phpunit execute.
 
 ## Setup files that are required to the project
 
-".coveralls.yml"
+- ".coveralls.yml"
 
 ```yml
 coverage_clover: build/logs/clover.xml
@@ -63,11 +63,11 @@ json_path: build/logs/coveralls-upload.json
 exclude_no_stmt: true
 ```
 
-"phpunit.xml.dist or phpunit.xml"
+- "phpunit.xml.dist or phpunit.xml"
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit 
+<phpunit
     backupGlobals="false"
     backupStaticAttributes="false"
     beStrictAboutTestsThatDoNotTestAnything="false"
@@ -83,13 +83,13 @@ exclude_no_stmt: true
     verbose="true"
 >
     <logging>
-        <log type="coverage-html" 
-            target="build/coverage" 
-            title="coverage" 
-            charset="UTF-8" 
-            yui="true" 
-            highlight="true" 
-            lowUpperBound="35" 
+        <log type="coverage-html"
+            target="build/coverage"
+            title="coverage"
+            charset="UTF-8"
+            yui="true"
+            highlight="true"
+            lowUpperBound="35"
             highLowerBound="70"
         />
         <log type="coverage-clover" target="build/logs/clover.xml"/>
@@ -110,7 +110,7 @@ exclude_no_stmt: true
 </phpunit>
 ```
 
-"composer.json"
+- "composer.json"
 
 ```json
 {
@@ -140,6 +140,6 @@ exclude_no_stmt: true
 }
 ```
 
-That's all my config to run coveralls and phpunit using jenkins.
+- That's all my config to run coveralls and phpunit using jenkins.
 
-Reference: https://alexbilbie.com/2015/04/setting-up-jenkins/
+  - Reference: <https://alexbilbie.com/2015/04/setting-up-jenkins/>

@@ -88,13 +88,13 @@
 * To check the directory or file size.
 
     ```text
-    du -sh directory/ 
+    du -sh directory/
     ```
 
 * To check the free space in the disk
 
     ```text
-    df -h . 
+    df -h .
     ```
 
 ## NETWORK CONFIGURATION
@@ -144,7 +144,7 @@
     sudo /etc/init.d/networking force-reload
     ```
 
-* Route Table Management. (This will show the current list of route(s) in the table) ```route ```
+* Route Table Management (This will show the current list of route(s) in the table).
 
     ```text
     route add -net x.x.x.x (The IPADDR of route that will be adding) netmask 255.x.x.x gw (The current gateway of the local machine) 192.x.x.x

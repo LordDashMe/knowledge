@@ -34,4 +34,4 @@ $ source ~/.bashrc
 
 ## Reference
 
-http://www.hostingadvice.com/how-to/set-command-aliases-linuxubuntudebian/
+<http://www.hostingadvice.com/how-to/set-command-aliases-linuxubuntudebian/>
