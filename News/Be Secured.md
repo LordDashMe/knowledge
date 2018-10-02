@@ -2,6 +2,6 @@
 
 ## The Hacker News
 
-Security in a serious way.
+- Security in a serious way.
 
-    Check this link: https://thehackernews.com/
+  - Check this link: <https://thehackernews.com/>

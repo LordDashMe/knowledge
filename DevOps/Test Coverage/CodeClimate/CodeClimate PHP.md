@@ -1,18 +1,18 @@
 # CodeClimate PHP
 
-Steps to setup codeclimate
+- Steps to setup codeclimate
   
-  https://docs.codeclimate.com/v1.0/docs/test-coverage-php
+  - <https://docs.codeclimate.com/v1.0/docs/test-coverage-php>
   
-  https://docs.codeclimate.com/docs/finding-your-test-coverage-token
+  - <https://docs.codeclimate.com/docs/finding-your-test-coverage-token>
 
-Primary Feature of codeclimate is the complexity evaluation or analysis concepts see below link:
+- Primary Feature of codeclimate is the complexity evaluation or analysis concepts see below link:
   
-  https://docs.codeclimate.com/v1.0/docs/cognitive-complexity
+  - <https://docs.codeclimate.com/v1.0/docs/cognitive-complexity>
 
 ---
 
-Add this lines of code in the Travis CI yml.
+- Add this lines of code in the Travis CI yml.
 
 ```yml
 # Required to run your project under the correct environment.
@@ -30,7 +30,7 @@ before_script:
   - composer install
 
 # Commands you want to run that will verify your build.
-script: 
+script:
   - mkdir -p build/logs
   - vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
@@ -44,4 +44,4 @@ notifications:
   on_failure: always
 ```
 
-Note: this configuration will be soon to be deprecated, we will try the latest copy as soon as possible.
+- Note: this configuration will be soon to be deprecated, we will try the latest copy as soon as possible.

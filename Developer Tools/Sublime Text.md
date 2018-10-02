@@ -14,7 +14,7 @@
 {
     "class": "icon_folder",
     "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-    "layer0.texture": "Theme - Default/common/light/folder_open.png"
+    "layer0.texture": "Theme - Default/common/light/folder_open.png",
     "layer0.opacity": 0.3,
     "content_margin": [8, 7]
 },
