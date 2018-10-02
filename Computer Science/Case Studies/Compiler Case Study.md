@@ -6,26 +6,26 @@ Is something like a way to communicate to the web server, when the request from 
 
 ## PHP History
 
-To check the archaic version repository of PHP.
+- To check the archaic version repository of PHP:
 
-    * Check this link: https://github.com/phplang/php-past
+  - Check this link: https://github.com/phplang/php-past
 
 ## Lisp
 
-About functional programming and this legendary programming language.
+- About functional programming and this legendary programming language.
 
-    * http://www.paulgraham.com/icad.html
+  - http://www.paulgraham.com/icad.html
 
-Some common terms used:
+- Some common terms used:
 
-    * Higher Order Function
+  - Higher Order Function
 
-    * Tree (Data Structure)
+  - Tree (Data Structure)
 
-    * Quick Sort
+  - Quick Sort
 
 ## Compiler Case Study Blog
 
-This man tried to create a simple compiler and his experience to it is great, worth to read this blog.
+- This man tried to create a simple compiler and his experience to it is great, worth to read this blog.
 
-    * Check this link: https://ruslanspivak.com/lsbasi-part1/
+  - Check this link: https://ruslanspivak.com/lsbasi-part1/

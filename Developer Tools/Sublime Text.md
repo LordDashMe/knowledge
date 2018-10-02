@@ -46,9 +46,9 @@ To enable the refresh project using a keyboard key for example using ```F5``` fo
 
 Download Sublime Text 3 using below link:
 
-    General: https://www.sublimetext.com/3
+- General: https://www.sublimetext.com/3
 
-    Linux: https://www.sublimetext.com/docs/3/linux_repositories.html
+- Linux: https://www.sublimetext.com/docs/3/linux_repositories.html
 
 Use free license for Build 3176 sgbteam:
 
@@ -72,9 +72,9 @@ F913BE58 42FEA319 F954EFDD AE881E0B
 
 Download Sublime Text 3 using below link:
 
-    General: https://www.sublimetext.com/3
+- General: https://www.sublimetext.com/3
 
-    Linux: https://www.sublimetext.com/docs/3/linux_repositories.html
+- Linux: https://www.sublimetext.com/docs/3/linux_repositories.html
 
 Use free license for Build 3143 by TwitterInc:
 
@@ -98,19 +98,19 @@ E36B85CC 84991F19 7575D828 470A92AB
 
 Download the following packages:
 
-    1. phpfmt
+1. phpfmt
 
-    2. SublimeLinter
+2. SublimeLinter
 
-    3. SublimeLinter-php
+3. SublimeLinter-php
 
-    4. PHPCompanion
+4. PHPCompanion
 
-    5. GitGutter
+5. GitGutter
 
-    6. A File Icon
+6. A File Icon
 
-    7. Markdown Preview
+7. Markdown Preview
 
 Configuration:
 

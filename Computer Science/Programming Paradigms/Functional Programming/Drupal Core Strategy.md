@@ -1,11 +1,11 @@
 # Drupal Core Strategy
 
-The drupal core code also composed of functional programming as said in the meetup.
+- The drupal core code also composed of functional programming as said in the meetup.
 
-Some common terms used:
+- Some common terms used:
 
-    * Currying
+  - Currying
 
-    * Memoization
+  - Memoization
 
-Check this link: https://www.youtube.com/watch?v=M3_xnTK6-pA
+- Check this link: https://www.youtube.com/watch?v=M3_xnTK6-pA
