@@ -24,8 +24,7 @@ RUN apt-get update -y && \
     lynx-cur \
     php-xdebug \
     php-gd \
-    libapache2-mod-php7.1 \
-    apache2 \
+    nginx \
     php7.1 \
     php7.1-fpm \
     php7.1-mbstring \
@@ -47,12 +46,13 @@ RUN mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
     chown -R www-data:www-data /var/www && \ 
     find /var/www -type d -exec chmod 755 {} \; && \
     find /var/www -type f -exec chmod 644 {} \; && \
-    cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/nginx && \
-    mv /etc/php/7.1/nginx/php.ini /etc/php/7.1/nginx/php.ini.bak && \
-    mv /etc/php/7.1/nginx/php.ini-development /etc/php/7.1/nginx/php.ini && \
     echo "\ndaemon off;" >> /etc/nginx/site-nginx.conf && \
     sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.1/fpm/php-fpm.conf && \
     echo "\ncgi.fix_pathinfo=0" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nfile_uploads=On" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nallow_url_fopen=On" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nmemory_limit=512M" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nmax_execution_time=360" >> /etc/php/7.1/fpm/php.ini && \
     echo "\nupload_max_filesize = 100M" >> /etc/php/7.1/fpm/php.ini && \
     echo "\npost_max_size = 100M" >> /etc/php/7.1/fpm/php.ini && \
     chmod +x /var/www/composer-install.sh && \
