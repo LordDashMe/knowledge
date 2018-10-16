@@ -15,6 +15,7 @@
 
 - Each cell in the table must contain only one piece of information and there can be no duplicate rows.
 
+--- CUSTOMER TABLE ---
 | Customer ID | First Name | Last Name | Telephone Number |
 | ----------- | ---------- | --------- | ---------------- |
 | 123 | John | Doe | 555-861-2025 |
