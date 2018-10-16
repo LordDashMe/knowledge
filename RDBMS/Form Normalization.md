@@ -52,6 +52,7 @@
 - A functional dependency on part of any candidate key is a violation of 2NF. In addition to the primary key, the relation may contain other candidate keys; it is necessary to establish that no non-prime attributes have part-key dependencies on any of these candidate keys.
 
 | Manufacturer | Model | Model Full Name | Manufacturer Country |
+| ------------ | ----- | --------------- | -------------------- |
 | Forte | X-Prime | Forte X-Prime | Italy |
 | Forte | Ultraclean | Forte Ultraclean | Italy |
 | Dent-o-Fresh | EZbrush | Dent-o-Fresh | EZbrush USA |
@@ -102,5 +103,5 @@
 ## Simplified Definition
 
 1. 1NF - must be atomic table and no duplicate in any direction.
-2. 2NF - if any column dependent on primary key, create different table.
-3. 3NF - if any column not dependent on primary key but dependent on any other column in same table, create a new table.
+2. 2NF - must passed the 1NF and if any column dependent on primary key, create different table to pass the 2NF.
+3. 3NF - must passed the 2NF and if any column not dependent on primary key but dependent on any other column in same table, create a new table to pass the 3NF.
