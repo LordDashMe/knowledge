@@ -37,7 +37,8 @@ RUN apt-get update -y && \
     php7.1-imap \
     php7.1-xml \
     php7.1-cli \
-    php7.1-gd
+    php7.1-gd \
+    php7.1-intl
 
 COPY site-nginx.conf composer-install.sh /tmp/
 RUN mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
@@ -55,6 +56,7 @@ RUN mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
     echo "\nmax_execution_time=360" >> /etc/php/7.1/fpm/php.ini && \
     echo "\nupload_max_filesize = 100M" >> /etc/php/7.1/fpm/php.ini && \
     echo "\npost_max_size = 100M" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\ndate.timezone = Asia/Manila" >> /etc/php/7.1/fpm/php.ini && \
     chmod +x /var/www/composer-install.sh && \
     sh /var/www/composer-install.sh && \
     rm /var/www/composer-install.sh

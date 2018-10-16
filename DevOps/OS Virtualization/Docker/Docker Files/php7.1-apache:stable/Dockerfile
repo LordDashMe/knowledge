@@ -38,18 +38,21 @@ RUN apt-get update -y && \
     php7.1-imap \
     php7.1-xml \
     php7.1-cli \
-    php7.1-gd
+    php7.1-gd \
+    php7.1-intl
 
 COPY apache-config.conf composer-install.sh /tmp/
 RUN mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
     mv /tmp/composer-install.sh /var/www/composer-install.sh && \
     a2enmod php7.1 && \
+    a2enconf php7.1-fpm && \
     a2enmod rewrite && \
     a2enmod headers && \
     cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2 && \
     mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak && \
     mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini && \
-    sed -i "s/short_open_tag = Off/short_open_tag= On/" /etc/php/7.1/apache2/php.ini && \
+    sed -i "s/short_open_tag = /short_open_tag = Off/" /etc/php/7.1/apache2/php.ini && \
+    sed -i "s/date.timezone = ;/date.timezone = Asia/Manila/" /etc/php/7.1/apache2/php.ini && \
     sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/7.1/apache2/php.ini && \
     echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
     chown -R www-data:www-data /var/www && \ 
