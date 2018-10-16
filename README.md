@@ -7,7 +7,8 @@
     "Computer Science",
     "DevOps",
     "Developer Tools",
-    "News"
+    "News",
+    "RDBMS"
 }
 ```
 
