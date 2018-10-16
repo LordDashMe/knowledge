@@ -78,6 +78,8 @@
 | Hoch | Toothmaster | Hoch Toothmaster |
 | Hoch | X-Prime | Hoch X-Prime |
 
+- Reference: <https://en.wikipedia.org/wiki/Second_normal_form>
+
 ## 3NF - Third Normal Form
 
 - A database is said to be in Third Normal Form if:
