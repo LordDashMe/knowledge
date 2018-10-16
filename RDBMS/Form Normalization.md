@@ -106,4 +106,4 @@
 
 1. 1NF - must be atomic table and no duplicate in any direction.
 2. 2NF - must passed the 1NF and if there's any column dependent on the primary key column, create a new table to pass the 2NF.
-3. 3NF - must passed the 2NF and if there's any column which is not dependent on the primary key column but dependent on any other foreign key column in same table, create a new table to pass the 3NF.
+3. 3NF - must passed the 2NF and if there's any column which is not dependent on the primary key column but dependent on any other foreign key column in the same table, create a new table to pass the 3NF.
