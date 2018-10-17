@@ -56,7 +56,7 @@ RUN mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
     echo "\nmax_execution_time=360" >> /etc/php/7.1/fpm/php.ini && \
     echo "\nupload_max_filesize = 100M" >> /etc/php/7.1/fpm/php.ini && \
     echo "\npost_max_size = 100M" >> /etc/php/7.1/fpm/php.ini && \
-    echo "\ndate.timezone = Asia/Manila" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\ndate.timezone = Asia\/Manila" >> /etc/php/7.1/fpm/php.ini && \
     chmod +x /var/www/composer-install.sh && \
     sh /var/www/composer-install.sh && \
     rm /var/www/composer-install.sh

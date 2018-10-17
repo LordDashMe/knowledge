@@ -52,7 +52,7 @@ RUN mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
     mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak && \
     mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini && \
     sed -i "s/short_open_tag = /short_open_tag = Off/" /etc/php/7.1/apache2/php.ini && \
-    sed -i "s/date.timezone = ;/date.timezone = Asia/Manila/" /etc/php/7.1/apache2/php.ini && \
+    sed -i "s/date.timezone = ;/date.timezone = Asia\/Manila/" /etc/php/7.1/apache2/php.ini && \
     sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/7.1/apache2/php.ini && \
     echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
     chown -R www-data:www-data /var/www && \ 
