@@ -4,11 +4,11 @@
 
 ```json
 {
-    [
+    "Knowledge": [
         "Curiosity",
-        "Developer Tools" ,
-        "DevOps" : {
-            "OS Virtualization" ,
+        "Developer Tools",
+        "DevOps": {
+            "OS Virtualization",
             "Server"
         },
         "RDBMS"
