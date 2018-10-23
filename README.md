@@ -7,8 +7,8 @@
     "Curiosity": {},
     "Developer Tools" : {},
     "DevOps" : {
-        "OS Virtualization",
-        "Server"
+        "OS Virtualization" : {},
+        "Server" : {}
     },
     "RDBMS" : {}
 }
