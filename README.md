@@ -5,15 +5,21 @@
 ```json
 {
     "Knowledge": [
-        {"Curiosity"},
-        {"Developer Tools"}, 
+        {
+            "Curiosity"
+        },
+        {
+            "Developer Tools"
+        }, 
         {
             "DevOps" : [
                 "OS Virtualization",
                 "Server"
             ]
         },
-        {"RDBMS"}
+        {
+            "RDBMS"
+        }
     ]
 }
 ```
