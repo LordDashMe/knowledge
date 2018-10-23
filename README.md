@@ -6,7 +6,7 @@
 {
     "Knowledge": [
         "Curiosity",
-        "Developer Tools", 
+        { "Developer Tools" }, 
         {
             "DevOps" : [
                 "OS Virtualization",
