@@ -8,5 +8,4 @@
 {
     "files.insertFinalNewline": true
 }
-
 ```

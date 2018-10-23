@@ -15,7 +15,7 @@
 
 - Each cell in the table must contain only one piece of information and there can be no duplicate rows.
 
-### Customer Table ###
+### Customer Table
 
 | Customer ID | First Name | Last Name | Telephone Number |
 | ----------- | ---------- | --------- | ---------------- |
@@ -27,7 +27,7 @@
 
 - Note that the "ID" is no longer unique in this solution with duplicated customers. To uniquely identify a row, we need to use a combination of (ID, Telephone Number). The value of the combination is unique although each column separately contains repeated values. Being able to uniquely identify a row (tuple) is a requirement of 1NF.
 
-### Customer Info Table ###
+### Customer Info Table
 
 | Customer ID | First Name | Last Name |
 | ----------- | ---------- | --------- |
@@ -35,7 +35,7 @@
 | 456 | Michael | Sauce |
 | 789 | Eunice | Calm |
 
-### Customer Contact Table ###
+### Customer Contact Table
 
 | ID | Customer ID | Telephone Number |
 | -- | ----------- | ---------------- |
@@ -57,7 +57,7 @@
 
 - A functional dependency on part of any candidate key is a violation of 2NF. In addition to the primary key, the relation may contain other candidate keys; it is necessary to establish that no non-prime attributes have part-key dependencies on any of these candidate keys.
 
-### Manufacturer Table ###
+### Manufacturer Table
 
 | Manufacturer | Model | Model Full Name | Manufacturer Country |
 | ------------ | ----- | --------------- | -------------------- |
@@ -70,7 +70,7 @@
 
 - Even if the designer has specified the primary key as {Model Full Name}, the relation is not in 2NF because of the other candidate keys. {Manufacturer, Model} is also a candidate key, and Manufacturer Country is dependent on a proper subset of it: Manufacturer. To make the design conform to 2NF, it is necessary to have two relations:
 
-### Manufacturer Location Table ###
+### Manufacturer Location Table
 
 | Manufacturer | Manufacturer Country |
 | ------------ | -------------------- |
@@ -79,7 +79,7 @@
 | Kobayashi | Japan |
 | Hoch | Germany |
 
-### Manufacturer Model Table ###
+### Manufacturer Model Table
 
 | Manufacturer | Model | Model Full Name |
 | ------------ | ----- | --------------- |
@@ -98,7 +98,7 @@
   - [x] 1. The databse meets 2NF requirements.
   - [x] 2. Any column, that is not the primary key, is not dependent on any other column.
 
-### Courses Table ###
+### Courses Table
 
 | Course | Semester | Places | TeacherID | TeacherName |
 | ------ | -------- | ------ | --------- | ----------- |
@@ -110,7 +110,7 @@
 
 - Now it should be obvious that TeacherName is dependent on TeacherID - so this is not in 3NF. To fix this, we do much the same as we did in 2NF - take TeacherName out of this table, and put it in its own, which has TeacherID as the key.
 
-### Teachers Table ###
+### Teachers Table
 
 | TeacherID | TeacherName |
 | --------- |-------------|
