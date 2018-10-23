@@ -7,11 +7,11 @@
 - The table values must be ```atomic```.
 
 - The table must be ```isomorphic```.
-  - [x] 1. There's no top-to-bottom ordering to the rows.
-  - [x] 2. There's no left-to-right ordering to the columns.
-  - [x] 3. There are no duplicate rows.
-  - [x] 4. Every row-and-column intersection contains exactly one value from the applicable domain (and nothing else).
-  - [x] 5. All columns are regular [i.e. rows have no hidden components such as row IDs, object IDs, or hidden timestamps].
+  1. There's no top-to-bottom ordering to the rows.
+  2. There's no left-to-right ordering to the columns.
+  3. There are no duplicate rows.
+  4. Every row-and-column intersection contains exactly one value from the applicable domain (and nothing else).
+  5. All columns are regular [i.e. rows have no hidden components such as row IDs, object IDs, or hidden timestamps].
 
 - Each cell in the table must contain only one piece of information and there can be no duplicate rows.
 
@@ -52,8 +52,8 @@
 ## 2NF - Second Normal Form
 
 - A database is said to be in 2NF - Second Normal Form if:
-  - [x] 1. The database meets 1NF requirements.
-  - [x] 2. Each column in a table represents what the primary key is describing.
+  1. The database meets 1NF requirements.
+  2. Each column in a table represents what the primary key is describing.
 
 - A functional dependency on part of any candidate key is a violation of 2NF. In addition to the primary key, the relation may contain other candidate keys; it is necessary to establish that no non-prime attributes have part-key dependencies on any of these candidate keys.
 
@@ -95,8 +95,8 @@
 ## 3NF - Third Normal Form
 
 - A database is said to be in Third Normal Form if:
-  - [x] 1. The databse meets 2NF requirements.
-  - [x] 2. Any column, that is not the primary key, is not dependent on any other column.
+  1. The databse meets 2NF requirements.
+  2. Any column, that is not the primary key, is not dependent on any other column.
 
 ### Courses Table
 
