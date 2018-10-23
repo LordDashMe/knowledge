@@ -6,11 +6,13 @@
 {
     "Knowledge": [
         "Curiosity",
-        "Developer Tools",
-        "DevOps" : {[
-            "OS Virtualization",
-            "Server"
-        ]},
+        "Developer Tools", 
+        {
+            "DevOps" : [
+                "OS Virtualization",
+                "Server"
+            ]
+        },
         "RDBMS"
     ]
 }
