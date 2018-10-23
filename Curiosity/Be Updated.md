@@ -10,7 +10,7 @@
 
     - <https://www.reddit.com/r/programming>
 
-    - More one technologies: <http://techmeme.com>
+    - More on technologies: <http://techmeme.com>
 
   - Weekly News Letters:
 
