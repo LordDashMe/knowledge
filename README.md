@@ -2,12 +2,14 @@
 
 :bulb: :books: :telescope: Everything that you need.
 
-```text
+```json
 {
-    "Computer Science",
-    "DevOps",
+    "Curiosity",
     "Developer Tools",
-    "News",
+    "DevOps" : {
+        "OS Virtualization",
+        "Server"
+    },
     "RDBMS"
 }
 ```
