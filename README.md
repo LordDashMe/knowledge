@@ -4,7 +4,7 @@
 
 ```json
 {
-    "Curiosity",
+    "Curiosity": {},
     "Developer Tools",
     "DevOps" : {
         "OS Virtualization",
