@@ -1,6 +1,6 @@
-# VSCode
+# Visual Studio Code
 
-## Config
+## Configuration
 
 - To add autoline feature after save, add the code below in the Preference > Settings > User Settings JSON.
 
