@@ -5,7 +5,7 @@
 ```json
 {
     "Knowledge": [
-        "Curiosity",
+        { "Curiosity" },
         { "Developer Tools" }, 
         {
             "DevOps" : [
@@ -13,7 +13,7 @@
                 "Server"
             ]
         },
-        "RDBMS"
+        { "RDBMS" }
     ]
 }
 ```
