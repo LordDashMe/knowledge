@@ -2,17 +2,17 @@
 
 :bulb: :books: :telescope: Everything that you need.
 
-- ![Curiosity](Curiosity/)
+- [Curiosity](Curiosity/)
 
-- ![DevOps](DevOps/)
+- [DevOps](DevOps/)
 
-  - ![OS Virtualization](DevOps/OS Virtualization/)
+  - [OS Virtualization](DevOps/OS Virtualization/)
   
-  - ![Server](DevOps/Server/)
+  - [Server](DevOps/Server/)
   
-- ![Developer Tools](Developer Tools/)
+- [Developer Tools](Developer Tools/)
 
-- ![RDBMS](RDBMS/)
+- [RDBMS](RDBMS/)
 
 ```json
 {
