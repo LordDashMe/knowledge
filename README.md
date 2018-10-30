@@ -6,11 +6,11 @@
 
 - [DevOps](DevOps/)
 
-  - [OS Virtualization](DevOps/OS Virtualization/)
+  - [OS Virtualization](DevOps/'OS Virtualization'/)
   
   - [Server](DevOps/Server/)
   
-- [Developer Tools](Developer Tools/)
+- [Developer Tools]('Developer Tools'/)
 
 - [RDBMS](RDBMS/)
 
