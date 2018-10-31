@@ -2,8 +2,8 @@
 
 :bulb: :books: :telescope: Everything that you need.
 
-## Explore 
-
+## Explore Content
+  
 - [Curiosity](Curiosity/)
 
 - [DevOps](DevOps/)
