@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
+COPY apache-config.conf composer-install.sh /tmp/
 RUN apt-get install -y --no-install-recommends software-properties-common python-software-properties && \
     LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get update -y && \
@@ -32,9 +33,8 @@ RUN apt-get install -y --no-install-recommends software-properties-common python
     php5.6-xml \
     php5.6-cli \
     php5.6-gd \
-    php5.6-intl
-COPY apache-config.conf composer-install.sh /tmp/
-RUN mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
+    php5.6-intl && \
+    mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
     mv /tmp/composer-install.sh /var/www/composer-install.sh && \
     a2enmod php5.6 && \
     a2enconf php5.6-fpm && \
