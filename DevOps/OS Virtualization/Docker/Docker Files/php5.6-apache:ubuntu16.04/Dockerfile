@@ -1,10 +1,6 @@
 FROM ubuntu:16.04
-
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
-
-RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends software-properties-common && \
-    apt-get install -y --no-install-recommends python-software-properties && \
+RUN apt-get install -y --no-install-recommends software-properties-common python-software-properties && \
     LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get update -y && \
     apt-get install -y --no-install-recommends \
@@ -12,7 +8,6 @@ RUN apt-get update -y && \
     curl \
     zip \
     vim \
-    nano \
     wkhtmltopdf \
     libxrender1 \
     git \
@@ -38,7 +33,6 @@ RUN apt-get update -y && \
     php5.6-cli \
     php5.6-gd \
     php5.6-intl
-
 COPY apache-config.conf composer-install.sh /tmp/
 RUN mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
     mv /tmp/composer-install.sh /var/www/composer-install.sh && \
@@ -60,13 +54,10 @@ RUN mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
     chmod +x /var/www/composer-install.sh && \
     sh /var/www/composer-install.sh && \
     rm /var/www/composer-install.sh
-
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_PID_FILE /var/run/apache2.pid
-
 EXPOSE 80
-
 ENTRYPOINT ["/bin/bash"]
