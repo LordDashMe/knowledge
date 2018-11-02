@@ -41,11 +41,11 @@ RUN apt-get install -y --no-install-recommends software-properties-common python
     find /var/www -type f -exec chmod 644 {} \; && \
     echo "\ndaemon off;" >> /etc/nginx/site-nginx.conf && \
     sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.1/fpm/php-fpm.conf && \
-    echo "\ncgi.fix_pathinfo=0" >> /etc/php/7.1/fpm/php.ini && \
-    echo "\nfile_uploads=On" >> /etc/php/7.1/fpm/php.ini && \
-    echo "\nallow_url_fopen=On" >> /etc/php/7.1/fpm/php.ini && \
-    echo "\nmemory_limit=512M" >> /etc/php/7.1/fpm/php.ini && \
-    echo "\nmax_execution_time=360" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\ncgi.fix_pathinfo = 0" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nfile_uploads = On" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nallow_url_fopen = On" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nmemory_limit = 512M" >> /etc/php/7.1/fpm/php.ini && \
+    echo "\nmax_execution_time = 360" >> /etc/php/7.1/fpm/php.ini && \
     echo "\nupload_max_filesize = 100M" >> /etc/php/7.1/fpm/php.ini && \
     echo "\npost_max_size = 100M" >> /etc/php/7.1/fpm/php.ini && \
     echo "\ndate.timezone = Asia\/Manila" >> /etc/php/7.1/fpm/php.ini && \
