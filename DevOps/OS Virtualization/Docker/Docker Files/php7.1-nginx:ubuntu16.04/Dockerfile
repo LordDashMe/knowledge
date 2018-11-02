@@ -1,10 +1,7 @@
 FROM ubuntu:16.04
-
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
-
-RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends software-properties-common && \
-    apt-get install -y --no-install-recommends python-software-properties && \
+COPY site-nginx.conf composer-install.sh /tmp/
+RUN apt-get install -y --no-install-recommends software-properties-common python-software-properties && \
     LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get update -y && \
     apt-get install -y --no-install-recommends \
@@ -12,7 +9,6 @@ RUN apt-get update -y && \
     curl \
     zip \
     vim \
-    nano \
     wkhtmltopdf \
     libxrender1 \
     git \
@@ -36,10 +32,8 @@ RUN apt-get update -y && \
     php7.1-xml \
     php7.1-cli \
     php7.1-gd \
-    php7.1-intl
-
-COPY site-nginx.conf composer-install.sh /tmp/
-RUN mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
+    php7.1-intl && \
+    mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
     mv /tmp/composer-install.sh /var/www/composer-install.sh && \
     ln -s /etc/nginx/sites-available/site-nginx.conf /etc/nginx/sites-enabled/site && \
     chown -R www-data:www-data /var/www && \ 
@@ -58,7 +52,5 @@ RUN mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
     chmod +x /var/www/composer-install.sh && \
     sh /var/www/composer-install.sh && \
     rm /var/www/composer-install.sh
-
 EXPOSE 80
-
 CMD ["/bin/bash"]
