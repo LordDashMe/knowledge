@@ -22,4 +22,4 @@
 
 - [RDBMS](RDBMS/)
 
-Hello! thank you so much for visiting this repository :+1:
+Thank you so much for visiting this repository :+1:, if you have any suggestion please feel free to send a pull request.
