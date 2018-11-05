@@ -1,16 +1,10 @@
 FROM jenkins/jenkins:lts
-
 USER root
-
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
-LABEL version="1.0.0"
-LABEL description="Optimized Dockerfile for jenkins-php7.1."
-
+COPY composer-install.sh /tmp/
 RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends software-properties-common && \
-    apt-get install -y --no-install-recommends python-software-properties && \
+    apt-get install -y --no-install-recommends software-properties-common python-software-properties && \
     LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
-    apt-get update -y && \
     apt-get install -y --no-install-recommends \
     wget \
     curl \
@@ -40,10 +34,8 @@ RUN apt-get update -y && \
     php7.1-imap \
     php7.1-xml \
     php7.1-cli \
-    php7.1-gd
-
-COPY composer-install.sh /tmp/
-RUN mv /tmp/composer-install.sh /var/www/composer-install.sh && \
+    php7.1-gd && \
+    mv /tmp/composer-install.sh /var/www/composer-install.sh && \
     sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.1/fpm/php-fpm.conf && \
     echo "\ncgi.fix_pathinfo=0" >> /etc/php/7.1/fpm/php.ini && \
     echo "\nupload_max_filesize = 100M" >> /etc/php/7.1/fpm/php.ini && \
@@ -55,7 +47,5 @@ RUN mv /tmp/composer-install.sh /var/www/composer-install.sh && \
     sh /var/www/composer-install.sh && \
     rm /var/www/composer-install.sh && \
     service php7.1-fpm start
-
 USER jenkins
-
 ENTRYPOINT ["/bin/bash"]

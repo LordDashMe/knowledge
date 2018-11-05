@@ -1,4 +1,4 @@
-FROM php5.6-apache:16.04
+FROM php5.6-apache:ubuntu16.04
 
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 

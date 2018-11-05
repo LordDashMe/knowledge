@@ -1,9 +1,4 @@
-FROM php7.1-nginx:16.04
-
+FROM php7.1-nginx:ubuntu16.04
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
-LABEL version="1.0.0"
-LABEL description="Optimized Dockerfile for php7.1-apache-nginx-symfony."
-
 ADD site-nginx-symfony.conf /etc/nginx/sites-available/
-
 ENTRYPOINT ["/bin/bash"]
