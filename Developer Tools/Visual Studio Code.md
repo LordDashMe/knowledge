@@ -9,3 +9,19 @@
     "files.insertFinalNewline": true
 }
 ```
+
+- To disable the status feedback.
+
+```json
+{
+    workbench.statusBar.feedback.visible": false
+}
+```
+
+- To add ruler in the editor view.
+
+```json
+{
+    "editor.rulers": [100]
+}
+```
