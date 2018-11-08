@@ -11,6 +11,10 @@
     - <https://www.reddit.com/r/programming>
 
     - More on technologies: <http://techmeme.com>
+  
+  - Medium:
+    
+    - <https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53>
 
   - Weekly News Letters:
 
