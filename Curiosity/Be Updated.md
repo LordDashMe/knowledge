@@ -1,6 +1,6 @@
 # Be Updated
 
-- How to stay updated with changes happening in the programming world.
+- How to stay updated with the changes happening in the programming world.
 
   - Daily:
 
