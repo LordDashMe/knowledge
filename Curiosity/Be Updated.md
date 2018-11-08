@@ -14,7 +14,7 @@
   
   - Medium:
     
-    - <https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53>
+    - <https://medium.com/>
 
   - Weekly News Letters:
 
