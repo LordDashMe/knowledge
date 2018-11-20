@@ -9,6 +9,7 @@ RUN apt-get update -y && \
     wget \
     curl \
     zip \
+    unzip \
     vim \
     wkhtmltopdf \
     libxrender1 \
