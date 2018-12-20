@@ -26,7 +26,6 @@ RUN apt-get update -y && \
     php7.2-fpm \
     php7.2-mbstring \
     php7.2-curl \
-    php7.2-mcrypt \
     php7.2-tokenizer \
     php7.2-dom \
     php7.2-zip \
