@@ -25,4 +25,3 @@
 - [RDBMS](RDBMS/)
 
 Thank you so much for visiting this repository, if you have any concern or suggestion feel free to reach me or send a pull request. :+1:
-
