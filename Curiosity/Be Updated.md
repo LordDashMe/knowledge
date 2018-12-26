@@ -13,7 +13,7 @@
     - More on technologies: <http://techmeme.com>
   
   - Medium:
-    
+
     - <https://medium.com/>
 
   - Weekly News Letters:
