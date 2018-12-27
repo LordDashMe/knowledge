@@ -2,7 +2,7 @@
 
 - Once in a while, you may need to cleanup unused containers, volumes, images and networks.
 
-- Make sure to double check and backup the data that may depend on docker before committing any actions.
+- *Warning:* Make sure to double check and backup the data that may depend on docker before committing any actions.
 
 - Remove unused volumes.
 
