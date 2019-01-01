@@ -24,4 +24,6 @@
 
 - [RDBMS](RDBMS/)
 
-Thank you so much for visiting this repository, if you have any concern or suggestion feel free to reach me or send a pull request. :+1:
+## License
+
+This package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
