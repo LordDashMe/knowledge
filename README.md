@@ -2,7 +2,7 @@
 
 :bulb: :books: :telescope: Everything that you need.
 
-## Explore Content
+## Explore The Content
   
 - [Curiosity](Curiosity/)
 
