@@ -24,6 +24,8 @@ Example steps implementing LAMP stack using docker.
 
   ```text
   docker run -d --name={phpmyadmin-dev} --net={docker-bridge-local} --ip={192.168.116.3} -p {8800:80} --link={mysql-server:db} {phpmyadmin/phpmyadmin:latest}
+  
+  docker run -d --name=phpmyadmin-dev --net=docker-bridge-local --ip=192.168.116.100 -e PMA_HOST=192.168.116.2 -e PMA_PORT=3306 -p 8800:80 phpmyadmin/phpmyadmin:latest
   ```
 
 - Run a Docker Image PHP5 Apache to generate Container with Network Bridge.
