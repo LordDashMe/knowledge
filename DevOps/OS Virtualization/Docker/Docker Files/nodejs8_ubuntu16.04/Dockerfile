@@ -18,7 +18,7 @@ RUN apt-get update -y && \
     openssl \
     apt-utils \
     lynx-cur && \
-    curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh && bash nodesource_setup.sh && \
+    curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get update -y && \
     apt-get install -y nodejs build-essential
 EXPOSE 80
