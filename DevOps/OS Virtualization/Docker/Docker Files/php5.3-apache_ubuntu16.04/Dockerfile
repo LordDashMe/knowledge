@@ -1,6 +1,7 @@
 FROM ubuntu:16.04
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 SHELL ["/bin/bash", "-c"]
+COPY apache-config.conf /tmp/
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends software-properties-common python-software-properties \
     wget \
@@ -61,6 +62,7 @@ RUN apt-get update -y && \
     a2enmod rewrite && \
     a2enmod headers && \
     a2enmod proxy_fcgi setenvif actions && \
+    mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
     echo "AddType application/x-httpd-php .php" >> /etc/apache2/mods-enabled/php5.load && \
     sed -i "s/short_open_tag = On/short_open_tag = Off/" ~/.phpbrew/php/php-5.3.28/etc/php.ini && \
     sed -i "s/date.timezone = ;/date.timezone = Asia\/Manila/" ~/.phpbrew/php/php-5.3.28/etc/php.ini && \
