@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends software-properties-common \
-    --no-install-recommends python-software-properties \
+    python-software-properties \
     default-jre \
     default-jdk \
     add-apt-repository ppa:webupd8team/java && \
