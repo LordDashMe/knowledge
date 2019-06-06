@@ -4,24 +4,22 @@
 version: '3.2'
 
 networks:
-  {your-custom-bridge-name}:
+  <your-custom-bridge-name>:
     external:
-      name: {your-custom-bridge-name}
+      name: '<your-external-custom-bridge-name>'
 
 services:
   app:
-    image: {your-exiting-image}
+    image: '<your-exiting-image>'
     volumes:
-      - /var/www/site/{your-application}:/var/www/site
-    external_links:
-      - {your-existing-containers}
+      - '</host/path/project/>:</container/path/project>'
     networks:
-      {your-custom-bridge-name}:
-        ipv4_address: {your-ip-v4}
+      <your-custom-bridge-name>:
+        ipv4_address: '<192.168.x.x>'
     ports:
-      - {your-custom-port}
-    command: /usr/sbin/apachectl -D FOREGROUND
+      - '<host-port>:<container-port>'
     tty: true
     stdin_open: true
-    restart: always
+    restart: 'no'
+    container_name: '<your-container-name>'
 ```
