@@ -4,18 +4,18 @@
 version: '3.2'
 
 networks:
-  <your-custom-bridge-name>:
+  <your-docker-network-name>:
     external:
-      name: '<your-external-custom-bridge-name>'
+      name: '<your-docker-network-name>'
 
 services:
   app:
-    image: '<your-exiting-image>'
+    image: '<your-existing-image>'
     volumes:
       - '</host/path/project/>:</container/path/project>'
     networks:
-      <your-custom-bridge-name>:
-        ipv4_address: '<192.168.x.x>'
+      <your-docker-network-name>:
+        ipv4_address: '<you-docker-network-ip-address ex. 192.168.x.x>'
     ports:
       - '<host-port>:<container-port>'
     tty: true
