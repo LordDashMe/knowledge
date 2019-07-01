@@ -56,8 +56,13 @@ RUN apt-get update -y && \
     phpbrew variants && \
     phpbrew --debug install 5.3.28 +bz2 +calendar +cli +gd +ctype +dom +iconv +fileinfo +filter +ipc +json +mbregex +mbstring +mhash +mcrypt +pcntl +pcre +pdo +phar +posix +readline +sockets +tokenizer +xml +curl +zip +mysql +intl +debug +apxs2 && \
     phpbrew use 5.3.28 && \
-    # https://github.com/phpbrew/phpbrew/issues/461#issuecomment-217141086
-    phpbrew ext install gd --with-gd=shared,/usr --enable-gd-native-ttf --with-gmp=shared,/usr --with-jpeg-dir=shared,/usr --with-xpm-dir=shared,/usr/X11R6 --with-png-dir=shared,/usr --with-freetype-dir=shared,/usr --with-vpx-dir=shared,/usr && \
+    # https://github.com/phpbrew/phpbrew/issues/106#issuecomment-26313340
+    phpbrew ext install gd \
+        -- --with-libdir=lib/i386-linux-gnu \
+        --with-gd=shared \
+        --enable-gd-native-ttf \
+        --with-jpeg-dir=/usr \
+        --with-png-dir=/usr && \
     # https://askubuntu.com/questions/453377/how-to-enable-event-mpm-apache-2-4-on-ubuntu-14-04-with-thread-safe-php
     a2dismod mpm_event && \
     a2enmod mpm_prefork && \
