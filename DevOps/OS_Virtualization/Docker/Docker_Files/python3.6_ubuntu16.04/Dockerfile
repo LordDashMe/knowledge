@@ -33,6 +33,7 @@ RUN apt-get update -y && \
     apt-get install -y python3-pip && \
     pip3 install --upgrade pip && \
     # https://github.com/pypa/pip/issues/5447#issuecomment-407693701
+    # https://github.com/pypa/pip/issues/5221#issuecomment-381568428
     hash -r pip3
 EXPOSE 80
 ENTRYPOINT ["/bin/bash"]
