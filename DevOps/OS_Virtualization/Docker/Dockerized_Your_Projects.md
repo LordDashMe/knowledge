@@ -16,7 +16,7 @@ Using docker network create --driver=bridge --subnet=<192.168.x.x/16> <docker-br
 
 - Create your Dockerfile and include all the necessary libraries or packages that will support the desire project you want to build.
 
-- You can get online: [Docker Files](https://github.com/LordDashMe/knowledge/tree/master/DevOps/OS_Virtualization/Docker/Docker_Files)
+- You can check this example: [Docker Files](https://github.com/LordDashMe/knowledge/tree/master/DevOps/OS_Virtualization/Docker/Docker_Files)
 
 ### 3 Images
 
