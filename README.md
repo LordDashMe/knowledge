@@ -8,19 +8,19 @@
 
 - [DevOps](DevOps/)
 
-  - [OS Virtualization](DevOps/OS%20Virtualization/)
+  - [OS_Virtualization](DevOps/OS_Virtualization/)
   
-    - [Docker](DevOps/OS%20Virtualization/Docker/)
+    - [Docker](DevOps/OS_Virtualization/Docker/)
 
-      - [Docker Files](DevOps/OS%20Virtualization/Docker/Docker%20Files/)
+      - [Docker_Files](DevOps/OS_Virtualization/Docker/Docker_Files/)
 
-      - [Examples](DevOps/OS%20Virtualization/Docker/Examples/)
+      - [Examples](DevOps/OS_Virtualization/Docker/Examples/)
   
   - [Server](DevOps/Server/)
   
     - [Linux](DevOps/Server/Linux/)
   
-- [Developer Tools](Developer%20Tools/)
+- [Developer_Tools](Developer_Tools/)
 
 - [FrontEnd](FrontEnd/)
 
@@ -29,4 +29,3 @@
 ## License
 
 This package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
