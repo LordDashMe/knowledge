@@ -1,0 +1,7 @@
+# https://github.com/phpbrew/phpbrew/issues/106#issuecomment-26313340
+phpbrew ext install gd \
+    -- --with-libdir=lib/i386-linux-gnu \
+    --with-gd=shared \
+    --enable-gd-native-ttf \
+    --with-jpeg-dir=/usr \
+    --with-png-dir=/usr 
