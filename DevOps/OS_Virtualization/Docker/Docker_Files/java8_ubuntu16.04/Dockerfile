@@ -16,6 +16,9 @@ RUN apt-get update -y && \
         vim \
         git \
         cron \
-        apt-utils
+        apt-utils \
+        git-core \ 
+        bash-completion && \
+    echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc
 EXPOSE 80
 ENTRYPOINT ["/bin/bash"]

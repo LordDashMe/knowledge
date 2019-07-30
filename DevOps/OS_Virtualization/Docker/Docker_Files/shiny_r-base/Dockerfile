@@ -11,7 +11,10 @@ RUN apt-get update && \
         libcurl4-gnutls-dev \
         libcairo2-dev/unstable \
         libxt-dev \
-        libssl-dev && \
+        libssl-dev \
+        git-core \ 
+        bash-completion && \
+    echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
     wget https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt" && \
     VERSION=$(cat version.txt)  && \
     wget "https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb && \

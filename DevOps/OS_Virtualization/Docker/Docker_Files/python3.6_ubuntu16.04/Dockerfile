@@ -16,7 +16,10 @@ RUN apt-get update -y && \
         cron \
         openssl \
         apt-utils \
-        lynx-cur && \
+        lynx-cur \ 
+        git-core \ 
+        bash-completion && \
+    echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
     add-apt-repository ppa:jonathonf/python-3.6 && \
     apt-get update -y && \
     apt-get install -y python3.6 && \

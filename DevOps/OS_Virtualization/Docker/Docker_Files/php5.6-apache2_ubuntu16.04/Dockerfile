@@ -15,7 +15,10 @@ RUN apt-get update -y && \
         cron \
         openssl \
         apt-utils \
-        lynx-cur && \
+        lynx-cur \ 
+        git-core \ 
+        bash-completion && \
+    echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
     LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get update -y && \
     apt-get install -y --no-install-recommends \

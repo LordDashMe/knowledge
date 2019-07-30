@@ -42,7 +42,10 @@ RUN apt-get update -y && \
         build-essential \
         libmhash-dev \
         libmhash2 \
-        libxslt1-dev && \
+        libxslt1-dev \ 
+        git-core \ 
+        bash-completion && \
+    echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
     # https://github.com/phpbrew/phpbrew/wiki/Quick-Start
     # http://sandeep-bisht.blogspot.com/2017/08/phpbrew-install-php-53-in-ubuntu-1604.html
     curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew && \
