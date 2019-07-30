@@ -43,6 +43,8 @@ RUN apt-get update -y && \
         libmhash-dev \
         libmhash2 \
         libxslt1-dev \ 
+        libjpeg-dev \
+        libfreetype6-dev \
         git-core \ 
         bash-completion && \
     echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
@@ -59,6 +61,7 @@ RUN apt-get update -y && \
     phpbrew variants && \
     phpbrew --debug install 5.3.28 +bz2 +calendar +cli +gd +ctype +dom +iconv +fileinfo +filter +ipc +json +mbregex +mbstring +mhash +mcrypt +pcntl +pcre +pdo +phar +posix +readline +sockets +tokenizer +xml +curl +zip +mysql +intl +debug +apxs2 && \
     phpbrew use 5.3.28 && \
+    phpbrew ext install gd -- --with-libdir=lib/i386-linux-gnu --with-gd=shared --enable-gd-native-ttf --with-jpeg-dir=/usr --with-png-dir=/usr && \
     # https://askubuntu.com/questions/453377/how-to-enable-event-mpm-apache-2-4-on-ubuntu-14-04-with-thread-safe-php
     a2dismod mpm_event && \
     a2enmod mpm_prefork && \

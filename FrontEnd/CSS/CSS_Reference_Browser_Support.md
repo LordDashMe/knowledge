@@ -72,3 +72,20 @@ order: 1;
 -ms-transform: translate3d(0, -2.5rem, 0);
 transform: translate3d(0, -2.5rem, 0);
 ```
+
+## GRADIENT IN CSS
+
+```css
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(left, #162D67 0%, #00A3EF 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(left, #162D67 0%, #00A3EF 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(left, #162D67 0%, #00A3EF 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left, left, color-stop(0, #162D67), color-stop(1, #00A3EF));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(left, #162D67 0%, #00A3EF 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to left, #162D67 0%, #00A3EF 100%);
+```
