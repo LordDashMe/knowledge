@@ -2,8 +2,6 @@
 
 ## Extensions
 
-- Editor Zoom | EasyZoom
-
 - VSCode Great Icons
 
 ## Configuration
