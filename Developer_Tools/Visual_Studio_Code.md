@@ -24,8 +24,9 @@
     files.insertFinalNewline": true,
     ```
 
-- To adjust the fontsize of terminal.
+- To adjust the editor fontsize instead of adjusting the editor zoom level.
 
     ```text
-    "terminal.integrated.fontSize": 12,
+    "editor.mouseWheelZoom": true,
+    "editor.fontSize": 12
     ```
