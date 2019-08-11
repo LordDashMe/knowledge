@@ -8,19 +8,19 @@
 
 - [DevOps](DevOps/)
 
-  - [OS_Virtualization](DevOps/OS_Virtualization/)
+  - [Virtualization](DevOps/Virtualization/)
   
-    - [Docker](DevOps/OS_Virtualization/Docker/)
+    - [Docker](DevOps/Virtualization/Docker/)
 
-      - [Docker_Images](DevOps/OS_Virtualization/Docker/Docker_Images/)
+      - [Docker_Images](DevOps/Virtualization/Docker/Docker_Images/)
 
-      - [Examples](DevOps/OS_Virtualization/Docker/Examples/)
+      - [Examples](DevOps/Virtualization/Docker/Examples/)
   
   - [Server](DevOps/Server/)
   
     - [Linux](DevOps/Server/Linux/)
   
-- [Developer_Tools](Developer_Tools/)
+- [DevTools](DevTools/)
 
 - [FrontEnd](FrontEnd/)
 
