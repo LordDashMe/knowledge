@@ -1,21 +1,9 @@
 FROM ubuntu:16.04
-LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
+LABEL maintainer="Dash Reyes <reyesjoshuaclifford@gmail.com>"
 SHELL ["/bin/bash", "-c"]
-COPY apache-config.conf /tmp/
+COPY 000-default.conf /tmp/
 RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends software-properties-common python-software-properties \
-        wget \
-        curl \
-        zip \
-        vim \
-        wkhtmltopdf \
-        libxrender1 \
-        git \
-        composer \
-        cron \
-        openssl \
-        apt-utils \
-        lynx-cur \
+    apt-get install -y --no-install-recommends \
         # https://stackoverflow.com/questions/36674667/png-h-file-not-found-linux
         libpng-dev \
         # https://community.c9.io/t/phpbrew-and-apache/3565/5
@@ -45,6 +33,8 @@ RUN apt-get update -y && \
         libxslt1-dev \ 
         libjpeg-dev \
         libfreetype6-dev \
+        git \
+        composer \
         git-core \ 
         bash-completion && \
     echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
@@ -61,6 +51,7 @@ RUN apt-get update -y && \
     phpbrew variants && \
     phpbrew --debug install 5.3.28 +bz2 +calendar +cli +gd +ctype +dom +iconv +fileinfo +filter +ipc +json +mbregex +mbstring +mhash +mcrypt +pcntl +pcre +pdo +phar +posix +readline +sockets +tokenizer +xml +curl +zip +mysql +intl +debug +apxs2 && \
     phpbrew use 5.3.28 && \
+    # https://github.com/phpbrew/phpbrew/issues/106#issuecomment-26313340
     phpbrew ext install gd -- --with-libdir=lib/i386-linux-gnu --with-gd=shared --enable-gd-native-ttf --with-jpeg-dir=/usr --with-png-dir=/usr && \
     # https://askubuntu.com/questions/453377/how-to-enable-event-mpm-apache-2-4-on-ubuntu-14-04-with-thread-safe-php
     a2dismod mpm_event && \
@@ -68,7 +59,7 @@ RUN apt-get update -y && \
     a2enmod rewrite && \
     a2enmod headers && \
     a2enmod proxy_fcgi setenvif actions && \
-    mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
+    mv /tmp/000-default.conf /etc/apache2/sites-enabled/000-default.conf && \
     echo "AddType application/x-httpd-php .php" >> /etc/apache2/mods-enabled/php5.load && \
     sed -i "s/short_open_tag = On/short_open_tag = Off/" ~/.phpbrew/php/php-5.3.28/etc/php.ini && \
     sed -i "s/date.timezone = ;/date.timezone = Asia\/Manila/" ~/.phpbrew/php/php-5.3.28/etc/php.ini && \

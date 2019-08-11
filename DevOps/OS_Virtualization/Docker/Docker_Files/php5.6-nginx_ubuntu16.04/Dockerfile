@@ -1,21 +1,9 @@
 FROM ubuntu:16.04
-LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
-COPY site-nginx.conf composer-install.sh /tmp/
+LABEL maintainer="Dash Reyes <reyesjoshuaclifford@gmail.com>"
+COPY site-nginx.conf composer-install.bash /tmp/
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
-        software-properties-common \
-        python-software-properties \
-        wget \
-        curl \
-        zip \
-        vim \
-        wkhtmltopdf \
-        libxrender1 \
         git \
-        cron \
-        openssl \
-        apt-utils \
-        lynx-cur \ 
         git-core \ 
         bash-completion && \
     echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
@@ -40,7 +28,9 @@ RUN apt-get update -y && \
         php5.6-gd \
         php5.6-intl && \
     mv /tmp/site-nginx.conf /etc/nginx/sites-available/ && \
-    mv /tmp/composer-install.sh /var/www/composer-install.sh && \
+    chmod +x /tmp/composer-install.bash && \
+    sh /tmp/composer-install.bash && \
+    rm /tmp/composer-install.bash && \
     ln -s /etc/nginx/sites-available/site-nginx.conf /etc/nginx/sites-enabled/site && \
     chown -R www-data:www-data /var/www && \ 
     find /var/www -type d -exec chmod 755 {} \; && \
@@ -54,9 +44,6 @@ RUN apt-get update -y && \
     echo "\nmax_execution_time = 360" >> /etc/php/5.6/fpm/php.ini && \
     echo "\nupload_max_filesize = 100M" >> /etc/php/5.6/fpm/php.ini && \
     echo "\npost_max_size = 100M" >> /etc/php/5.6/fpm/php.ini && \
-    echo "\ndate.timezone = Asia\/Manila" >> /etc/php/5.6/fpm/php.ini && \
-    chmod +x /var/www/composer-install.sh && \
-    sh /var/www/composer-install.sh && \
-    rm /var/www/composer-install.sh
+    echo "\ndate.timezone = Asia\/Manila" >> /etc/php/5.6/fpm/php.ini
 EXPOSE 80
 ENTRYPOINT ["/bin/bash"]

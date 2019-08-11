@@ -1,5 +1,5 @@
 FROM r-base:latest
-LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
+LABEL maintainer="Dash Reyes <reyesjoshuaclifford@gmail.com>"
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 COPY shiny-server.sh /usr/bin/shiny-server.sh
 RUN apt-get update && \

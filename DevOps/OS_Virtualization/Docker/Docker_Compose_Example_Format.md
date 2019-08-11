@@ -4,7 +4,7 @@
 version: '3.2'
 
 networks:
-  <your-docker-network-name>:
+  compose-network:
     external:
       name: '<your-docker-network-name>'
 
@@ -14,7 +14,7 @@ services:
     volumes:
       - '</host/path/project/>:</container/path/project>'
     networks:
-      <your-docker-network-name>:
+      compose-network:
         ipv4_address: '<you-docker-network-ip-address ex. 192.168.x.x>'
     ports:
       - '<host-port>:<container-port>'

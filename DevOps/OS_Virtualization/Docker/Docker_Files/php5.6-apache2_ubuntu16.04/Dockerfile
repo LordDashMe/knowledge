@@ -1,21 +1,9 @@
 FROM ubuntu:16.04
-LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
-COPY apache-config.conf composer-install.sh /tmp/
+LABEL maintainer="Dash Reyes <reyesjoshuaclifford@gmail.com>"
+COPY 000-default.conf composer-install.bash /tmp/
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
-        software-properties-common \ 
-        python-software-properties \ 
-        wget \
-        curl \
-        zip \
-        vim \
-        wkhtmltopdf \
-        libxrender1 \
         git \
-        cron \
-        openssl \
-        apt-utils \
-        lynx-cur \ 
         git-core \ 
         bash-completion && \
     echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
@@ -41,8 +29,10 @@ RUN apt-get update -y && \
         php5.6-gd \
         php5.6-mongo \
         php5.6-intl && \
-    mv /tmp/apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
-    mv /tmp/composer-install.sh /var/www/composer-install.sh && \
+    mv /tmp/000-default.conf /etc/apache2/sites-enabled/000-default.conf && \
+    chmod +x /tmp/composer-install.bash && \
+    sh /tmp/composer-install.bash && \
+    rm /tmp/composer-install.bash && \
     a2enmod php5.6 && \
     a2enconf php5.6-fpm && \
     a2enmod rewrite && \
@@ -57,10 +47,7 @@ RUN apt-get update -y && \
     echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
     chown -R www-data:www-data /var/www && \ 
     find /var/www -type d -exec chmod 755 {} \; && \
-    find /var/www -type f -exec chmod 644 {} \; && \
-    chmod +x /var/www/composer-install.sh && \
-    sh /var/www/composer-install.sh && \
-    rm /var/www/composer-install.sh
+    find /var/www -type f -exec chmod 644 {} \;
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
