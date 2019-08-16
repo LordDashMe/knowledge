@@ -7,7 +7,7 @@ RUN apt-get update -y && \
         git \ 
         git-core \ 
         bash-completion && \
-    echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
+    # echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \
     curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get update -y && \
     apt-get install -y --no-install-recommends \ 
