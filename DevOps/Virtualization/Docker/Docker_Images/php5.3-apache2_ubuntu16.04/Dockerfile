@@ -4,6 +4,8 @@ SHELL ["/bin/bash", "-c"]
 COPY 000-default.conf /tmp/
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
+        wget \
+        curl \
         # https://stackoverflow.com/questions/36674667/png-h-file-not-found-linux
         libpng-dev \
         # https://community.c9.io/t/phpbrew-and-apache/3565/5

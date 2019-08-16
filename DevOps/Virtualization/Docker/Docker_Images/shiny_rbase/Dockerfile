@@ -12,6 +12,8 @@ RUN apt-get update && \
         libcairo2-dev/unstable \
         libxt-dev \
         libssl-dev \
+        wget \
+        curl \
         git-core \ 
         bash-completion && \
     echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc && \

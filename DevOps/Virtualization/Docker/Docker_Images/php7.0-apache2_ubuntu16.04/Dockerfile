@@ -3,6 +3,8 @@ LABEL maintainer="Dash Reyes <reyesjoshuaclifford@gmail.com>"
 COPY 000-default.conf composer-install.bash /tmp/
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
+        wget \
+        curl \
         git \
         git-core \ 
         bash-completion && \

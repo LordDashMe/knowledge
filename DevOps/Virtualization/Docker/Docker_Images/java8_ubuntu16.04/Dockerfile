@@ -8,6 +8,8 @@ RUN apt-get update -y && \
     apt-get update -y && \
     apt-get install -y --no-install-recommends \ 
         oracle-java8-installer \
+        wget \
+        curl \
         git \
         git-core \ 
         bash-completion && \
