@@ -3,6 +3,7 @@ LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 COPY site-nginx.conf composer-install.bash /tmp/
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
+        software-properties-common \
         wget \
         curl \
         git \

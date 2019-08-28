@@ -4,6 +4,7 @@ COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 COPY shiny-server.sh /usr/bin/shiny-server.sh
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+        software-properties-common \
         sudo \
         gdebi-core \
         pandoc \

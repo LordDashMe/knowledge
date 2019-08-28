@@ -4,6 +4,7 @@ SHELL ["/bin/bash", "-c"]
 COPY 000-default.conf /tmp/
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
+        software-properties-common \
         wget \
         curl \
         # https://stackoverflow.com/questions/36674667/png-h-file-not-found-linux
