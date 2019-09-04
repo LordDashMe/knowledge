@@ -26,7 +26,7 @@
 
 - [Web_Development](Web_Development/)
 
-  - [FrontEnd](Web_Development/FrontEnd/)
+  - [Front_End](Web_Development/Front_End/)
 
 ## License
 
