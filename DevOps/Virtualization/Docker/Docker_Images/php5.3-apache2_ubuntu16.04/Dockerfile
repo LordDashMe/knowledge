@@ -4,6 +4,7 @@ SHELL ["/bin/bash", "-c"]
 COPY 000-default.conf /tmp/
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
+        # https://askubuntu.com/a/1000120
         software-properties-common \
         wget \
         curl \
