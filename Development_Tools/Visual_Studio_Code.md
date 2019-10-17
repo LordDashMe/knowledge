@@ -21,7 +21,7 @@
     - Add this to the File > Preferences > Settings
     
     ```text
-    files.insertFinalNewline": true,
+    "files.insertFinalNewline": true,
     ```
 
 - To adjust the editor font size instead of adjusting the editor zoom level.
