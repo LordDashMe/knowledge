@@ -32,4 +32,4 @@
 
     - <https://thehackernews.com/>
 
-- Tip: It's too much information to grasp for one day. So make sure you do glance, but not get too much dwelved in it.
+- Tip: It's too much information to grasp for one day. So make sure you do glance, but not get too much dwelve in it.

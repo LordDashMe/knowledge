@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer="Dash Reyes <reyesjoshuaclifford@gmail.com>"
+LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \ 
         # https://askubuntu.com/a/1000120

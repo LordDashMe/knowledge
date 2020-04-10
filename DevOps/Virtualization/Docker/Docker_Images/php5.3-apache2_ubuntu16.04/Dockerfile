@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer="Dash Reyes <reyesjoshuaclifford@gmail.com>"
+LABEL maintainer="Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>"
 SHELL ["/bin/bash", "-c"]
 COPY 000-default.conf /tmp/
 RUN apt-get update -y && \
