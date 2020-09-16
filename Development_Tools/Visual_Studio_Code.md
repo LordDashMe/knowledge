@@ -34,5 +34,5 @@
 - To adjust terminal font size.
 
   ```text
-  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.fontSize": 12,
   ```
