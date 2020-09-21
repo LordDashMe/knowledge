@@ -19,6 +19,8 @@ RUN apt-get update -y && \
         php7.0-json \
         php7.0-cgi \
         php7.0-fpm \
+        # To fix issue related to: https://github.com/phpbrew/phpbrew/issues/1149
+        php7.0-bz2 \
         autoconf \
         automake \
         libxml2-dev \
