@@ -1,6 +1,6 @@
 # Boostnote
 
-- Stable Version: 0.11.17
+- Stable Version: https://github.com/BoostIO/boost-releases/releases/tag/v0.12.1
 
 - Keyboard Shortcuts
 
