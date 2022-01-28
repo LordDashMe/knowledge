@@ -1,6 +1,6 @@
 # Knowledge
 
-:bulb: :books: :telescope: Everything that you need.
+Everything that you need. :bulb: :books: :telescope:
 
 ## Explore The Content
   
