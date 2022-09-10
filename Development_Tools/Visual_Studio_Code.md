@@ -38,4 +38,4 @@
   ```
 ### How to open User or Workspace settings json file
 
-You can open the settings.json file with the Preferences: Open Settings (JSON) command in the Command Palette (Ctrl+Shift+P).
+You can open the settings.json file with the Preferences: Open Settings (JSON) command in the Command Palette (Ctrl+Shift+P) or for Mac (Command+Shift+P).
