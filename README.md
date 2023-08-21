@@ -8,6 +8,8 @@ Everything that you need. :bulb: :books: :telescope:
 
 - [Development_Tools](Development_Tools/)
 
+- [Development_Setup](Development_Setup/)
+
 - [DevOps](DevOps/)
 
   - [Virtualization](DevOps/Virtualization/)
