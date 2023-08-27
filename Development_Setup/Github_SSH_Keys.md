@@ -12,6 +12,14 @@
 
 - Enter to accept the default file location.
 
+  - If required to change the file name, it needs to properly setup with the ssh config
+ 
+    ```sh
+    Host github.com
+      AddKeysToAgent yes
+      IdentityFile ~/.ssh/<file-name-gen-key>
+    ```
+
 - Enter a secure passphrase.
 
 - Enter this command to display the contents of your **public key**.
