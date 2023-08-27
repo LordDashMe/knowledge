@@ -48,7 +48,7 @@
 - Run the following
 
   ```sh
-  $ ssh -T git@github.com
+  $ ssh -vT git@github.com
   ```
 
 - You may see a warning like this:
