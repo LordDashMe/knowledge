@@ -15,3 +15,7 @@ $ sudo apt-get update && sudo apt-get install google-cloud-cli
 
 $ gcloud init
 ```
+
+## Reference
+
+- <https://cloud.google.com/sdk/docs/install#deb>
