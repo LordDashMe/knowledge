@@ -4,6 +4,8 @@
 
 - VSCode Great Icons
 
+- GitLens
+
 ## Configuration
 
 - To add ruler in the editor view.
