@@ -6,6 +6,8 @@
 
 - GitLens
 
+- Edit csv
+
 ## Configuration
 
 - To add ruler in the editor view.
