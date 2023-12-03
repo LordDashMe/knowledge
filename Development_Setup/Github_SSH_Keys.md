@@ -12,7 +12,7 @@
 
 - Enter to accept the default file location.
 
-  - If required to change the file name, it needs to properly setup with the ssh config
+  - If required to change the file name, it needs to properly setup on `~/.ssh/config`
  
     ```sh
     Host github.com
