@@ -17,7 +17,8 @@
     ```sh
     Host github.com
       AddKeysToAgent yes
-      IdentityFile ~/.ssh/<file-name-gen-key>
+      # IdentityFile ~/.ssh/<file-name-gen-key>
+      IdentityFile ~/.ssh/id_rsa
     ```
 
 - Enter a secure passphrase.
