@@ -32,7 +32,8 @@
 
   ```text
   "editor.mouseWheelZoom": true,
-  "editor.fontSize": 12
+  "editor.fontSize": 12,
+  "editor.tabSize": 2
   ```
 
 - To adjust terminal font size.
