@@ -21,6 +21,17 @@
       IdentityFile ~/.ssh/id_rsa
     ```
 
+  - (Optional) For multiple ssh key that's available for single host, you can use this format
+ 
+    ```sh
+    Host host1.github.com
+      HostName github.com
+      User git
+      PreferredAuthentications publickey
+      IdentityFile ~/.ssh/id_rsa
+      IdentitiesOnly yes
+    ```
+
 - Enter a secure passphrase.
 
 - Enter this command to display the contents of your **public key**.
