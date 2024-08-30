@@ -100,3 +100,9 @@ You can open the settings.json file with the Preferences: Open Settings (JSON) c
 ## Useful Shortcut Keys
 
 - Command Palette: `Shift + Cmd + P`
+
+- Show settings: `Cmd + ,`
+
+- Show files: `Cmd + P`
+
+- Exit project view: `Cmd + K + F`
