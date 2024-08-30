@@ -96,3 +96,7 @@ You can open the settings.json file with the Preferences: Open Settings (JSON) c
   }
 }
 ```
+
+## Useful Shortcut Keys
+
+- Command Palette: `Shift + Cmd + P`
