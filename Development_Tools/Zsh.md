@@ -4,15 +4,7 @@
 
 - [Oh My Zsh](https://ohmyz.sh/#install)
 
-- [nerdfonts](https://www.nerdfonts.com/)
-
-  - Set the default font as `HackNerdFont-Regular` on Terminal
- 
-    - To set the default font, open Terminal
-    
-    - Click Terminal at the top
-   
-    - Select Settings > Profiles > Text > Font Change > Choose `HackNerdFont-Regular`
+  - Follow the manual font installation: <https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#manual-font-installation>
 
 - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
