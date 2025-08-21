@@ -18,6 +18,12 @@
 
 - Markdown All in One
 
+- Claude Coe for VSCode
+
+- Discord Presence
+
+  - Set default activity messaging: Crafting, exploring... ☕ 🔭
+
 ## Configuration
 
 - To add ruler in the editor view.
