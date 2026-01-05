@@ -53,6 +53,8 @@
 
 - Provide a title in the field (i.e Local Device SSH Keys, ...).
 
+- Set key type as `Authentication Key`.
+
 - Provide the **public key** (content of `.ssh/id_rsa.pub`) into the Key field.
 
 ### Test SSH Connection with Github
