@@ -4,35 +4,35 @@ Everything that you need. :bulb: :books: :telescope:
 
 ## Explore The Content
   
-- [Curiosity](Curiosity/)
+- [Curiosity](curiosity/)
 
-- [DevelopmentTools](DevelopmentTools/)
+- [Development Tools](development-tools/)
 
-- [DevelopmentSetup](DevelopmentSetup/)
+- [Development Setup](development-setup/)
 
-- [DevOps](DevOps/)
+- [DevOps](devops/)
 
-  - [Virtualization](DevOps/Virtualization/)
+  - [Virtualization](devops/virtualization/)
   
-    - [Docker](DevOps/Virtualization/Docker/)
+    - [Docker](devops/virtualization/docker/)
 
-      - [DockerImages](DevOps/Virtualization/Docker/DockerImages/)
+      - [Docker Images](devops/virtualization/docker/docker-images/)
 
-      - [Examples](DevOps/Virtualization/Docker/Examples/)
+      - [Examples](devops/virtualization/docker/examples/)
   
-  - [Server](DevOps/Server/)
+  - [Server](devops/server/)
   
-    - [Linux](DevOps/Server/Linux/)
+    - [Linux](devops/server/linux/)
 
-- [Database](Database/)
+- [Database](database/)
 
-- [WebDevelopment](WebDevelopment/)
+- [Web Development](web-development/)
 
-  - [FrontEnd](WebDevelopment/FrontEnd/)
+  - [Front End](web-development/front-end/)
 
-    - [CSS](WebDevelopment/FrontEnd/CSS/)
+    - [CSS](web-development/front-end/css/)
 
-    - [JavaScript](WebDevelopment/FrontEnd/JavaScript/)
+    - [JavaScript](web-development/front-end/javascript/)
 
 ## License
 
