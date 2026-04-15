@@ -6,9 +6,9 @@ Everything that you need. :bulb: :books: :telescope:
   
 - [Curiosity](Curiosity/)
 
-- [Development_Tools](Development_Tools/)
+- [DevelopmentTools](DevelopmentTools/)
 
-- [Development_Setup](Development_Setup/)
+- [DevelopmentSetup](DevelopmentSetup/)
 
 - [DevOps](DevOps/)
 
@@ -16,7 +16,7 @@ Everything that you need. :bulb: :books: :telescope:
   
     - [Docker](DevOps/Virtualization/Docker/)
 
-      - [Docker_Images](DevOps/Virtualization/Docker/Docker_Images/)
+      - [DockerImages](DevOps/Virtualization/Docker/DockerImages/)
 
       - [Examples](DevOps/Virtualization/Docker/Examples/)
   
@@ -26,13 +26,13 @@ Everything that you need. :bulb: :books: :telescope:
 
 - [Database](Database/)
 
-- [Web_Development](Web_Development/)
+- [WebDevelopment](WebDevelopment/)
 
-  - [Front_End](Web_Development/Front_End/)
+  - [FrontEnd](WebDevelopment/FrontEnd/)
 
-    - [CSS](Web_Development/Front_End/CSS/)
+    - [CSS](WebDevelopment/FrontEnd/CSS/)
 
-    - [JavaScript](Web_Development/Front_End/JavaScript/)
+    - [JavaScript](WebDevelopment/FrontEnd/JavaScript/)
 
 ## License
 
