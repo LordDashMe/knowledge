@@ -7,7 +7,7 @@
 - Generate ssh keys with the email
 
   ```sh
-  ssh-keygen -t rsa -b 4096 -C "john.doe@example.com"
+  ssh-keygen -t rsa -b 4096 -C "john.doe@example.com" -f /path/to/filename
   ```
 
 - Enter to accept the default file location.
