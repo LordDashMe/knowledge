@@ -3,7 +3,9 @@
 Everything that you need. :bulb: :books: :telescope:
 
 ## Explore The Content
-  
+
+- [AI Engineering](ai-engineering/)
+
 - [Curiosity](curiosity/)
 
 - [Development Tools](development-tools/)
