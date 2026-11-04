@@ -32,7 +32,7 @@ source ~/.zshrc
 
 ## 3. Authenticate Each Account
 
-**Account 1** — run the alias and log in when prompted:
+**Account 1** - run the alias and log in when prompted:
 
 ```bash
 claude-a1
@@ -40,7 +40,7 @@ claude-a1
 
 Credentials are saved to `~/.claude-a1`.
 
-**Account 2** — repeat for the second account:
+**Account 2** - repeat for the second account:
 
 ```bash
 claude-a2
